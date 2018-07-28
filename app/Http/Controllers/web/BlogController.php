@@ -26,12 +26,11 @@ class BlogController extends Controller
     }
 
     public function category($slug){
-        $category = Category::where('slug', $slug)->pluck('id')->first();
-        $Posts    = Post::where('category_id', $category)->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
-
-        return view('web.blog', compact('Posts'));
+        //$category = Category::where('slug', $slug)->pluck('id')->first();
+        //$Posts    = Post::where('category_id', $category)->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
+        //return view('web.blog', compact('Posts'));
     }
-
+    
     public function tag($slug){
         $Posts = Post::whereHas('tags', function($query) use ($slug){
 
