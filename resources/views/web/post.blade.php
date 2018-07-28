@@ -35,7 +35,7 @@
                             <h2>Categorias </h2>
                             
 							<div class="c-single__cats">
-								<div class="c-single__cat"><a href="#">categorias</a>
+								<div class="c-single__cat"><a href="#"></a>
 									<div class="count">(15)</div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                             <h2>Tags </h2>
                             <div class="c-single__cats">
                                 @foreach($post->tags as $tag)
-								<div class="c-single__cat"><a href="#">{{ $tag->name }}</a>
+								<div class="c-single__cat"><a href="{{ route('tag', $tag->slug) }}">{{ $tag->name }}</a>
 									<div class="count">(15)</div>
                                 </div>
                                 @endforeach
@@ -58,14 +58,7 @@
 								<div class="c-single__recent">
 									<figure></figure>
 									<div class="info">
-										<h3>Dental patients increased to protection</h3>
-										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
-									</div>
-								</div>
-								<div class="c-single__recent">
-									<figure></figure>
-									<div class="info">
-										<h3>Dental patients increased to protection</h3>
+										<h3>{{ $post->name }}</h3>
 										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
 									</div>
 								</div>

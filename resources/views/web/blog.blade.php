@@ -47,7 +47,7 @@
 									</div>
 
 									<div class="c-blog__article-info">
-										<h2>{{ $post->name }}</h2>
+										<h2>{{ $post->name }} </h2>
 										<p>{{ $post->excerpt }} [...]</p><a href="{{ route('post', $post->slug) }}"><span>+ </span>Leer más</a>
 										<div class="c-blog__article-socials">
 											<a href="#">

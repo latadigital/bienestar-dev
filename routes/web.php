@@ -26,8 +26,8 @@ Route::get('/programa-descuentos', 'web\ProgramaDescuentosController@index')->na
 Route::get('/blog/{slug}','web\BlogController@post')->name('post');
 
 
-Route::get('/categorias/{slug}','web\BlogController@post')->name('post');
-Route::get('/tags/{slug}','web\BlogController@post')->name('post');
+Route::get('/categorias/{slug}','web\BlogController@category')->name('category');
+Route::get('/tags/{slug}','web\BlogController@tag')->name('tag');
 
 
 
