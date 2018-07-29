@@ -80,10 +80,13 @@
 			
         @yield('content')
 
-    	<script src="/assets_web/js/libs/bundle.js"></script>
+
+			<script src="/assets_web/js/libs/bundle.js"></script>
+			<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 			<!-- inject:js-->
 			<!-- endinject-->
 			<script src="/assets_web/js/main.min.js"></script>
+
 			<div class="c-footerLocation">
 				<div class="c-footerLocation__inner">
 					<div class="c-footerLocation__boxes">

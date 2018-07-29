@@ -35,15 +35,17 @@
 						<p>Porque lo que les suceda a nuestros niños  puede afectarles en el futuro, es importante saber cómo cuidarlos, cuáles son las enfermedades más comunes que pueden afectarlos y qué hacer para que crezcan sanos y felices.</p>
 						<div class="c-blog__articles">
 							
-
+							<div class="grid-sizer"></div>
 							@foreach($Posts as $post)
 							<div class="c-blog__article">
 								<div class="c-blog__article-inner">
 
 									<div class="c-blog__article-image">
-										@if($post->file)
+										<!--@if($post->file)
 											<img src="{{ $post->file }}">
-										@endif
+										@endif-->
+
+										<img src="/assets_web/img/placeholder.png" alt="">
 									</div>
 
 									<div class="c-blog__article-info">
