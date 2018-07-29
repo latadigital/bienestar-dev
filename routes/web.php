@@ -26,6 +26,7 @@ Route::get('/programa-descuentos', 'web\ProgramaDescuentosController@index')->na
 Route::get('/blog/{slug}','web\BlogController@post')->name('post');
 
 
+// HEAD
 //Route::get('/categorias/{slug}','web\BlogController@category')->name('category');
 Route::get('/tags/{slug}','web\BlogController@tag')->name('tag');
 
@@ -38,6 +39,9 @@ Route::resource('tags', 'Admin\TagController');
 Route::resource('categories', 'Admin\CategoryController');
 Route::resource('posts', 'Admin\PostController');
 
+
+// Route::get('/categorias/{slug}','web\BlogController@post')->name('post');
+// Route::get('/tags/{slug}','web\BlogController@post')->name('post');
 
 
 
