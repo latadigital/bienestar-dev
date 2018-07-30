@@ -19,7 +19,6 @@ class BlogController extends Controller
 
     function index(){
         $posts = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
-        
         return view('web.blog', compact('posts'));
 
     }
@@ -29,6 +28,7 @@ class BlogController extends Controller
             $query->where('slug', $slug);
         })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
 
+       // $posts = Post::with('categories')->get();
         return view('web.blog', compact('posts'));
     }
     
@@ -44,7 +44,4 @@ class BlogController extends Controller
         $post = Post::where('slug', $slug)->first();
         return view('web.post', compact('post'));
     }
-
-
-
 }

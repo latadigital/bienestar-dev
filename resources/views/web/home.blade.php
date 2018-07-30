@@ -8,9 +8,9 @@
 							<div class="c-bigbanner__image"><img src="/assets_web/img/home-bigbanner.jpg" alt=""></div>
 							<div class="c-bigbanner__info">
 								<hgroup>
-									<h2><span>Nuevo </span>programa de</h2>
-									<h1>Descuentos					</h1>
-								</hgroup><span> <i>en </i>medicamentos</span>
+									<h2 class="animated bounce fadeInDown"><span>Nuevo </span>programa de</h2>
+									<h1 class=" animated bounce fadeInUp">Descuentos					</h1>
+								</hgroup><span class=" animated bounce fadeInUp"> <i>en </i>medicamentos</span>
 							</div>
 						</div>
 					</div>
@@ -20,7 +20,7 @@
 					<div class="c-homeAbout__info">
 						<div class="c-homeAbout__image"><img src="/assets_web/img/home-about-image.jpg"></div>
 						<div class="c-homeAbout__description">
-							<h1 class="c-info__h1 u-mb30"><span>Programa de descuentos en medicamentos</span></h1>
+							<h1 class="c-info__h1 u-mb30 "><span>Programa de descuentos en medicamentos</span></h1>
 							<p class="c-info__parrafo">Para nosotros la salud de las personas es lo más importante, Por eso hemos creado un exclusivo programa de descuento en medicamentos de alta calidad para facilitar el cumplimiento de la terapia que su médico ha indicado.</p>
 							<div class="c-info__link c-info__link--mobileInline"><span>+ </span>Busca descuento</div>
 						</div>

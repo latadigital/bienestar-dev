@@ -14,8 +14,10 @@
 		<link rel="stylesheet" href="/assets_web/css/main.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Asap:400,500,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-		<link rel="stylesheet" href="libs/fontawesome/web-fonts-with-css/css/fontawesome.min.css">
+		<!--<link rel="stylesheet" href="/assets_web/libs/fontawesome/web-fonts-with-css/css/fontawesome.min.css">-->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	</head>
 	<body>
 		<div id="wrapper">
@@ -32,7 +34,7 @@
 			<header class="c-header">
 				<div class="c-header__top">
 					<div class="c-header__inner">
-						<div class="c-header__brand"><a href="/"><img src="/assets_web/img/header-logo-v2.png" alt="Laboratorios Saval"></a></div>
+						<div class="c-header__brand animated bounce fadeInDown"><a href="/"><img src="/assets_web/img/header-logo-v2.png" alt="Laboratorios Saval"></a></div>
 						<div class="c-header__boxSearch">
 							<div class="c-header__email"><span class="icon-Correo"></span>
 								<p>Email :  contacto@bienestarsaval.cl</p>
@@ -57,7 +59,7 @@
 								<li><a href="/somos">Quienes somos</a></li>
 								<li><a href="/programa-descuentos">Programa de descuento</a></li>
 								<li><a href="/blog">Temas de interés</a></li>
-								<li><a href="/contacto">Contacto																								</a></li>
+								<li><a href="/contacto">Contacto</a></li>
 							</ul>
 						</nav>
 						<div class="c-header__nav-mobile"><a class="c-header__mobile-open" href="/"><span class="fas fa-bars"></span><i>Menu</i></a><a class="c-header__mobile-account" href="#" style="display:none;"><span class="fas fa-user-circle"></span><i>Mi cuenta						</i></a><a class="c-header__mobile-search" href="#"><span class="icon-Lupa-02"></span><i>¿Qué buscas?									</i></a></div>
@@ -86,7 +88,7 @@
 			<!-- inject:js-->
 			<!-- endinject-->
 			<script src="/assets_web/js/main.min.js"></script>
-
+			
 			<div class="c-footerLocation">
 				<div class="c-footerLocation__inner">
 					<div class="c-footerLocation__boxes">

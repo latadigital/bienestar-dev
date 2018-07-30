@@ -33,8 +33,7 @@
 								</form>
 							</div>
 
-							
-                            <h2>Categorias </h2>
+                            <h2>Categorias</h2>
 							<div class="c-single__cats">	
 								@foreach($post->categories as $category)
 								<div class="c-single__cat"><a href="{{ route('category', $category->slug) }}">{{ $category->name }}</a>
