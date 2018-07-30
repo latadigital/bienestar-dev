@@ -18,27 +18,26 @@ class BlogController extends Controller
     }
 
     function index(){
-
-        $Posts = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
+        $posts = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
         
-        return view('web.blog', compact('Posts'));
+        return view('web.blog', compact('posts'));
 
     }
 
     public function category($slug){
-        //$category = Category::where('slug', $slug)->pluck('id')->first();
-        //$Posts    = Post::where('category_id', $category)->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
-        //return view('web.blog', compact('Posts'));
+        $posts = Post::whereHas('categories', function($query) use ($slug){
+            $query->where('slug', $slug);
+        })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
+
+        return view('web.post', compact('posts'));
     }
     
     public function tag($slug){
-        $Posts = Post::whereHas('tags', function($query) use ($slug){
-
+        $posts = Post::whereHas('tags', function($query) use ($slug){
             $query->where('slug', $slug);
-
         })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
 
-        return view('web.blog', compact('Posts'));
+        return view('web.post', compact('posts'));
     }
 
     public function post($slug){

@@ -32,10 +32,11 @@
 									</div>
 								</form>
 							</div>
+
+							
                             <h2>Categorias </h2>
-                            
 							<div class="c-single__cats">
-								<div class="c-single__cat"><a href="#"></a>
+								<div class="c-single__cat"><a href=""></a>
 									<div class="count">(15)</div>
                                 </div>
                             </div>

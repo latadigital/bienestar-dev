@@ -34,13 +34,15 @@
 						<h2 class="c-blog__orangeTitle"><strong>Infantil</strong></h2>
 						<p>Porque lo que les suceda a nuestros niños  puede afectarles en el futuro, es importante saber cómo cuidarlos, cuáles son las enfermedades más comunes que pueden afectarlos y qué hacer para que crezcan sanos y felices.</p>
 						<div class="c-blog__articles">
-							
 							<div class="grid-sizer"></div>
-							@foreach($Posts as $post)
+
+							@foreach($posts as $post)
 							<div class="c-blog__article">
+								
 								<div class="c-blog__article-inner">
 
 									<div class="c-blog__article-image">
+										<!--Acá va la foto dinámica-->
 										<!--@if($post->file)
 											<img src="{{ $post->file }}">
 										@endif-->
@@ -73,7 +75,7 @@
 							</div>
 							@endforeach
 
-							<!--{{ $Posts->render() }}-->
+							<!--{{ $posts->render() }}-->
 						</div>
 						<a class="c-blog__loadMore" href="#">cargar más</a>
 					</div>

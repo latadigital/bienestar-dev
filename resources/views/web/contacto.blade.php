@@ -16,7 +16,7 @@
                 <div class="c-contacto__box c-contacto__box--pad40">
                     <h1 class="c-info__h1 c-info__h1--inline-block u-mb30"><span>Contacto</span></h1>
                     <div class="c-contacto__form">
-                        <form action="#">
+                        <form action="#" method="POST">
                             <div class="input name">
                                 <input type="text" placeholder="Nombre">
                             </div>
