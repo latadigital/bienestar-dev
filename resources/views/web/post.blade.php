@@ -35,22 +35,13 @@
 
 							
                             <h2>Categorias </h2>
-							<div class="c-single__cats">
-								<div class="c-single__cat"><a href=""></a>
-									<div class="count">(15)</div>
-                                </div>
-                            </div>
-
-                            <h2>Tags </h2>
-                            <div class="c-single__cats">
-                                @foreach($post->tags as $tag)
-								<div class="c-single__cat"><a href="{{ route('tag', $tag->slug) }}">{{ $tag->name }}</a>
+							<div class="c-single__cats">	
+								@foreach($post->categories as $category)
+								<div class="c-single__cat"><a href="{{ route('category', $category->slug) }}">{{ $category->name }}</a>
 									<div class="count">(15)</div>
                                 </div>
                                 @endforeach
                             </div>
-                           
-                            
 
 							<h2>Posts recientes</h2>
                             <div class="c-single__recents">

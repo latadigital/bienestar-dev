@@ -46,7 +46,6 @@
 										<!--@if($post->file)
 											<img src="{{ $post->file }}">
 										@endif-->
-
 										<img src="/assets_web/img/placeholder.png" alt="">
 									</div>
 

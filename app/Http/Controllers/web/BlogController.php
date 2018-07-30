@@ -29,7 +29,7 @@ class BlogController extends Controller
             $query->where('slug', $slug);
         })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
 
-        return view('web.post', compact('posts'));
+        return view('web.blog', compact('posts'));
     }
     
     public function tag($slug){
@@ -37,7 +37,7 @@ class BlogController extends Controller
             $query->where('slug', $slug);
         })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
 
-        return view('web.post', compact('posts'));
+        return view('web.blog', compact('posts'));
     }
 
     public function post($slug){

@@ -19,6 +19,8 @@ class CreateCategoriesTable extends Migration
             $table->string('name', 128);
             $table->string('slug', 128)->unique();
             $table->mediumText('body')->nullable();
+            $table->string('icohome', 128)->nullable();
+            $table->string('iconav', 128)->nullable();
             $table->timestamps();
         });
     }
