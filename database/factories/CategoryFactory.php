@@ -12,6 +12,7 @@ $factory->define(App\Category::class, function (Faker $faker) {
         'icohome' => $faker->imageUrl($width = 50, $height = 50),
         'iconav' => $faker->imageUrl($width = 50, $height = 50),
     ];
+    
 });
 
 
