@@ -43,19 +43,16 @@
 
 									<div class="c-blog__article-image">
 										<!--Acá va la foto dinámica-->
-										<!--@if($post->file)
+										@if($post->file)
 											<img src="{{ $post->file }}">
-										@endif-->
-										<img src="/assets_web/img/placeholder.png" alt="">
+										@endif
+										<!--<img src="/assets_web/img/placeholder.png" alt="">-->
 									</div>
 
 									<div class="c-blog__article-info">
 										<h2>{{ $post->name }} </h2>
 										<p>{{ $post->excerpt }} [...]</p><a href="{{ route('post', $post->slug) }}"><span>+ </span>Leer más</a>
 										<div class="c-blog__article-socials">
-											<a href="#">
-												<span class="fas fa-envelope"></span>
-											</a>
 											<a href="#">
 												<span class="fab fa-facebook-f"></span>
 											</a>

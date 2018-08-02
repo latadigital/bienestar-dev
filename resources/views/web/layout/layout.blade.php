@@ -26,7 +26,7 @@
 					<div class="c-top__nav">
 						<ul>
 							<li><a href="faq">Preguntas frecuentes</a></li>
-							<li><a href="#">Terminos y condiciones</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
 						</ul>
 					</div>
 				</div>
@@ -56,7 +56,7 @@
 						<nav>
 							<ul>
 								<li><a href="/">Home</a></li>
-								<li><a href="/somos">Quienes somos</a></li>
+								<li><a href="/somos">Quiénes somos</a></li>
 								<li><a href="/programa-descuentos">Programa de descuento</a></li>
 								<li><a href="/blog">Temas de interés</a></li>
 								<li><a href="/contacto">Contacto</a></li>
@@ -85,17 +85,17 @@
 
 			<script src="/assets_web/js/libs/bundle.js"></script>
 			<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+			
 			<!-- inject:js-->
 			<!-- endinject-->
 			<script src="/assets_web/js/main.min.js"></script>
-			
 			<div class="c-footerLocation">
 				<div class="c-footerLocation__inner">
 					<div class="c-footerLocation__boxes">
 						<div class="c-footerLocation__box c-footerLocation__box--lightOrange">
 							<div class="c-footerLocation__icon c-footerLocation__icon--mediumOrange"><img src="/assets_web/img/iconos/icon-location.svg" alt="Location"></div>
 							<h2>Laboratorios Saval</h2>
-							<p>Av. Presidente Eduardo Frei Montalva 4.600 Renca - Santiago de Chile.</p>
+							<p>Av. Presidente Eduardo Frei Montalva 4.600 <br />Renca - Santiago de Chile.</p>
 						</div>
 						<div class="c-footerLocation__box c-footerLocation__box--darkOrange">
 							<div class="c-footerLocation__icon c-footerLocation__icon--darkOrange"><img src="/assets_web/img/iconos/icon-email.svg" alt="Location"></div>
@@ -110,24 +110,24 @@
 					<div class="c-footer__boxes">
 						<div class="c-footer__box">
 							<figure><img src="/assets_web/img/footer-logo-v2.png" alt="Saval"></figure>
-							<p>Programa de descuento en medicamentos de Laboratorios SAVAL.</p>
+							<p>Programa de Descuento en medicamentos <br />de Laboratorios SAVAL.</p>
 						</div>
 						<div class="c-footer__box">
-							<h2>Paginas</h2>
+							<h2>Páginas</h2>
 							<ul> 
 								<li><a href="#">Home</a></li>
-								<li><a href="#">Quienes somos</a></li>
-								<li><a href="#">Plan de descuentos</a></li>
+								<li><a href="#">Quiénes somos</a></li>
+								<li><a href="#">Programa de Descuento </a></li>
 							</ul>
 							<ul> 
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Quienes somos</a></li>
-								<li><a href="#">Plan de descuentos</a></li>
+								<li><a href="#">Temas de Interés</a></li>
+								<li><a href="#">Contacto</a></li>
+								<li><a href="#">Preguntas Frecuentes</a></li>
 							</ul>
 						</div>
 						<div class="c-footer__box">
-							<h2>Suscribete a nuestros Temas de interés</h2>
-							<p>Mantente actualizado, recibe noticias, artículos y tips sobre vida saludable, solo debes suscribirte.</p>
+							<h2>¡Suscríbase a nuestros Temas de Interés! </h2>
+							<p>Recibirá semanalmente artículos relevantes y recomendaciones para cuidar su salud.</p>
 							<form action="#">
 								<div class="input email">
 									<input type="text" placeholder="Email">

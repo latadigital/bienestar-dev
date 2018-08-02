@@ -20,7 +20,6 @@ class BlogController extends Controller
     function index(){
         $posts = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
         return view('web.blog', compact('posts'));
-
     }
 
     public function category($slug){
@@ -44,4 +43,5 @@ class BlogController extends Controller
         $post = Post::where('slug', $slug)->first();
         return view('web.post', compact('post'));
     }
+
 }

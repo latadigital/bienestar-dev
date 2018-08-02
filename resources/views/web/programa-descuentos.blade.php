@@ -39,7 +39,7 @@
 				</div>
 				<div class="c-comoAcceder">
 					<div class="c-inner">
-						<h1>¿Cómo <strong>Acceder al Programa?</strong></h1>
+						<h1>¿Cómo <strong>Acceder al programa?</strong></h1>
 						<div class="c-comoAcceder__items">
 							<div class="c-comoAcceder__item">
 								<div class="icon"><img src="/assets_web/img/planes-icon-1.png"></div>
@@ -84,19 +84,19 @@
 						<div class="c-buscadorResultados__items">
 							<div class="c-buscadorResultados__item">
 								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
-								<div class="actions"><span>$-3.000</span><a href="#">Generar cupón</a></div>
+								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 							<div class="c-buscadorResultados__item">
 								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
-								<div class="actions"><span>$-3.000</span><a href="#">Generar cupón</a></div>
+								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 							<div class="c-buscadorResultados__item">
 								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
-								<div class="actions"><span>$-3.000</span><a href="#">Generar cupón</a></div>
+								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 							<div class="c-buscadorResultados__item">
 								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
-								<div class="actions"><span>$-3.000</span><a href="#">Generar cupón</a></div>
+								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 						</div>
 						<div class="c-buscadorResultados__text">
@@ -116,6 +116,113 @@
 						</div>
 					</div>
 				</div>
+
+
+
+				<div class="c-mapa">
+					<div id="map"></div>
+					<div class="c-mapa__search">
+						<h1>¿No sabe donde está la farmacia más cercana?</h1>
+						<p>¡No se preocupe, nosotros le ayudamos!</p>
+						<div class="c-mapa__searchBox">
+							<form action="">
+								<div class="input address">
+									<input type="text" placeholder="Ingrese su dirección">
+								</div>
+								<div class="input submit">
+									<input type="submit" value="Buscar">
+								</div>
+							</form>
+						</div>
+						<div class="c-mapa__item">
+							<p><strong>Farmacia Ahumada</strong></p>
+							<p>Av. los leones 1160</p>
+							<p>Abierto hasta 00:00</p><a href="#">¿Cómo llegar?</a>
+						</div>
+						<div class="c-mapa__item">
+							<p><strong>Farmacia Ahumada</strong></p>
+							<p>Av. los leones 1160</p>
+							<p>Abierto hasta 00:00</p><a href="#">¿Cómo llegar?</a>
+						</div>
+						<div class="c-mapa__item">
+							<p><strong>Farmacia Ahumada</strong></p>
+							<p>Av. los leones 1160</p>
+							<p>Abierto hasta 00:00</p><a href="#">¿Cómo llegar?</a>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="c-modalCupon" style="display:none;">
+					<div class="c-modalCupon__overlay"></div>
+					<div class="c-modalCupon__wrapper">
+						<div class="c-modalCupon__info">
+							<div class="c-modalCupon__text"><span><img src="/assets_web/img/nuevo.png"></span>
+								<h1>Programa de <br><strong>Descuento </strong><br>en medicamentos</h1>
+								<p>Descuento válido del 01 de marzo de 2018 al 31 de diciembre de 2018, ambas fechas inclusive. Consulte por la disponibilidad de los productos en Farmacias Ahumada, Farmacias Salco Brand, Farmacias Cruz Verde,  y en todas las farmacias adheridas a este programa. <br>No acumulables a otras promociones, ofertas y/o convenios. NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por su médico. Consulte siempre el uso de medicamentos con su médico o químico farmacéutico. Dispensación de medicamentos se realizará conforme condición de venta según normativa vigente.</p>
+								<div class="c-modalCupon__valido">
+									<p>Programa válido del: 01/03/2018 al 31/12/2018</p>
+								</div>
+								<div class="c-modalCupon__input-agree">
+									<input type="checkbox">He leído y aceptado los términos
+								</div>
+							</div>
+							<div class="c-modalCupon__codigos">
+								<div class="c-modalCupon__center">
+									<div class="c-modalCupon__item"><img src="/assets_web/img/barra-1.png"></div>
+									<div class="c-modalCupon__item"><img src="/assets_web/img/barra-2.png"></div>
+									<div class="c-modalCupon__item"><img src="/assets_web/img/barra-3.png"></div>
+								</div>
+							</div>
+						</div>
+						<div class="c-modalCupon__buttons"><a href="#"><span></span>Guardar</a><a href="#"><span> </span>Imprimir</a><a href="#">Enviar por correo</a><a href="#">Enviar por mensaje de texto</a></div>
+					</div>
+				</div>
+
+				<div class="c-modalMobile" style="display:none;">
+					<div class="c-modalMobile__overlay"></div>
+					<div class="c-modalMobile__wrapper">
+						<div class="c-modalMobile__firstStep c-modalMobile__firstStep--active"><span><img src="/assets_web/img/nuevo.png"></span>
+							<h1>Programa de <br><strong>Descuento </strong><br>en medicamentos</h1>
+							<div class="c-modalMobile__text">
+								<p>Descuento válido del 01 de marzo de 2018 al 31 de diciembre de 2018, ambas fechas inclusive. Consulte por la disponibilidad de los productos en Farmacias Ahumada, Farmacias Salco Brand, Farmacias Cruz Verde,  y en todas las farmacias adheridas a este programa. No acumulables a otras promociones, ofertas y/o convenios. NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por su médico. Consulte siempre el uso de medicamentos con su médico o quími</p>
+							</div>
+							<div class="c-modalMobile__valido">
+								<p>Programa válido del: 01/03/2018 al 31/12/2018</p>
+							</div>
+							<div class="c-modalMobile__input-agree">
+								<input type="checkbox">He leído y aceptado los términos
+							</div><a class="c-modalMobile__btn" href="#">Obtener cupón</a>
+						</div>
+						<div class="c-modalMobile__secondStep">
+							<div class="c-modalMobile__item">
+								<div class="c-modalMobile__image"><img src="/assets_web/img/barra-1.png"></div>
+								<div class="c-modalMobile__info">
+									<h2>Escanee el código de barra o digítelo</h2>
+								</div>
+								<div class="c-modalMobile__codigo"><span>1231231231</span></div>
+							</div>
+							<div class="c-modalMobile__item">
+								<div class="c-modalMobile__image"><img src="/assets_web/img/barra-2.png"></div>
+								<div class="c-modalMobile__info">
+									<h2>Escanee el código de barra o digítelo</h2>
+								</div>
+								<div class="c-modalMobile__codigo"><span>1231231231</span></div>
+							</div>
+							<div class="c-modalMobile__item">
+								<div class="c-modalMobile__image"><img src="/assets_web/img/barra-3.png"></div>
+								<div class="c-modalMobile__info">
+									<h2>Escanee el código de barra o digítelo</h2>
+								</div>
+								<div class="c-modalMobile__codigo"><span>1231231231 </span></div>
+							</div>
+							<div class="c-modalMobile__btnMobile"><a class="c-modalMobile__btn-imprimir" href="#">Imprimir cupón</a></div>
+						</div>
+					</div>
+				</div>
 			</main>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7YP48-E060udEXnypBIPVSYtC1Shf6A&amp;callback=initMap" async defer></script>
+			<script src="/assets_web/js/map.js"></script>
 
 @stop
