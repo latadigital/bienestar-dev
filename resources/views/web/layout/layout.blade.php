@@ -12,12 +12,13 @@
 		<!-- inject:css-->
 		<!-- endinject-->
 		<link rel="stylesheet" href="/assets_web/css/main.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Asap:400,500,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Asap:400,500,600,700,800,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 		<!--<link rel="stylesheet" href="/assets_web/libs/fontawesome/web-fonts-with-css/css/fontawesome.min.css">-->
-		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 	</head>
 	<body>
 		<div id="wrapper">
@@ -72,7 +73,7 @@
 					<ul>
 						<li><a href="/">Home</a></li>
 						<li><a href="/somos">Quienes somos</a></li>
-						<li><a href="/programa-descuentos">Plan de descuentos</a></li>
+						<li><a href="/programa-descuentos">Programa de descuento</a></li>
 						<li><a href="/blog">Temas de interés</a></li>
 						<li><a href="/contacto">Contacto	</a></li>
 					</ul>
@@ -85,10 +86,17 @@
 
 			<script src="/assets_web/js/libs/bundle.js"></script>
 			<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-			
 			<!-- inject:js-->
 			<!-- endinject-->
+			<script src="/assets_web/js/libs/owl-carousel/owl.carousel.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7YP48-E060udEXnypBIPVSYtC1Shf6A&amp;callback=initMap" async defer></script>
+			<script src="/assets_web/js/map.js"></script>
+
 			<script src="/assets_web/js/main.min.js"></script>
+
+
 			<div class="c-footerLocation">
 				<div class="c-footerLocation__inner">
 					<div class="c-footerLocation__boxes">

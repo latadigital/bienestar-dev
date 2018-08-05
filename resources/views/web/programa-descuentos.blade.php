@@ -29,17 +29,17 @@
 						</div>
 						<div class="c-beneficios__lista">
 							<ul>
-								<li>Los medicamentos incluidos en el programa son en su mayoría para el tratamiento de las enfermedades más frecuentes.</li>
-								<li>Los medicamentos SAVAL son fabricados con alta tecnología farmacéutica y certificados según normas internacionales.</li>
-								<li>El programa BienEstar SAVAL incluye también fármacos para las enfermedades crónicas y agudas más prevalentes.</li>
-								<li>Más de 90 medicamentos de Laboratorios SAVAL con importantes descuentos para cumplir con la terapia indicada por el médico.</li>
+								<li> <i class="c-number">1 </i><span>Los medicamentos incluidos en el programa son en su mayoría para el tratamiento de las enfermedades más frecuentes.</li>
+								<li> <i class="c-number">2 </i><span>Los medicamentos SAVAL son fabricados con alta tecnología farmacéutica y certificados según normas internacionales.</li>
+								<li> <i class="c-number">3 </i><span>El programa BienEstar SAVAL incluye también fármacos para las enfermedades crónicas y agudas más prevalentes.</li>
+								<li> <i class="c-number">4 </i><span>Más de 90 medicamentos de Laboratorios SAVAL con importantes descuentos para cumplir con la terapia indicada por el médico.</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="c-comoAcceder">
 					<div class="c-inner">
-						<h1>¿Cómo <strong>Acceder al programa?</strong></h1>
+						<h1>¿Cómo <strong>acceder al programa?</strong></h1>
 						<div class="c-comoAcceder__items">
 							<div class="c-comoAcceder__item">
 								<div class="icon"><img src="/assets_web/img/planes-icon-1.png"></div>
@@ -123,32 +123,13 @@
 					<div id="map"></div>
 					<div class="c-mapa__search">
 						<h1>¿No sabe donde está la farmacia más cercana?</h1>
-						<p>¡No se preocupe, nosotros le ayudamos!</p>
-						<div class="c-mapa__searchBox">
-							<form action="">
-								<div class="input address">
-									<input type="text" placeholder="Ingrese su dirección">
-								</div>
-								<div class="input submit">
-									<input type="submit" value="Buscar">
-								</div>
-							</form>
-						</div>
-						<div class="c-mapa__item">
-							<p><strong>Farmacia Ahumada</strong></p>
-							<p>Av. los leones 1160</p>
-							<p>Abierto hasta 00:00</p><a href="#">¿Cómo llegar?</a>
-						</div>
-						<div class="c-mapa__item">
-							<p><strong>Farmacia Ahumada</strong></p>
-							<p>Av. los leones 1160</p>
-							<p>Abierto hasta 00:00</p><a href="#">¿Cómo llegar?</a>
-						</div>
-						<div class="c-mapa__item">
-							<p><strong>Farmacia Ahumada</strong></p>
-							<p>Av. los leones 1160</p>
-							<p>Abierto hasta 00:00</p><a href="#">¿Cómo llegar?</a>
-						</div>
+						<p>¡No se preocupe, nosotros le ayudamos!
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+salcobrand/@-33.424048,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Salcobrand</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+ahumada/@-33.4240474,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacia Ahumada</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+cruz+verde/@-33.4240468,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacia Cruz Verde</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+carmen/@-33.4240462,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacia Carmen</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/place/Red+Farma/@-33.442526,-70.6700345,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5acbd6e39bb:0xa3eacbb03a1c69f9!8m2!3d-33.442526!4d-70.6678458" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Redfarma</strong></a></div>
+						</p>
 					</div>
 				</div>
 
@@ -222,7 +203,6 @@
 					</div>
 				</div>
 			</main>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7YP48-E060udEXnypBIPVSYtC1Shf6A&amp;callback=initMap" async defer></script>
-			<script src="/assets_web/js/map.js"></script>
+			
 
 @stop

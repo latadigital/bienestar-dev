@@ -2,7 +2,7 @@
 
 @section('content')        
     
-            <main role="main">
+           <!-- <main role="main">
 				<div class="c-single">
 					<div class="c-inner">
 						<div class="c-single__content">
@@ -66,6 +66,170 @@
 						</div>
 					</div>
 				</div>
-            </main>
+            </main>-->
+
+
+
+			<main role="main">
+				<div class="c-single">
+					<div class="c-inner">
+						<div class="c-single__content">
+							<div class="c-single__image">
+								@if($post->file)
+									<img src="{{ $post->file }}">
+								@endif
+							</div>
+							<p class="post-info"> <span>Causas, Síntomas y Tratamientos</span></p>
+							<h1>Sed elit quam iaculis sed semper sit amet sollicitudin vita.</h1>
+							<p class="c-date">May 16, 2018 |  Posteado por <strong>Dr. Luisa Cea, Pediatra Universidad de Chile.</strong></p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea satham non numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+							<h2>Enim ipsam voluptatem quia voluptas</h2>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<blockquote>“ Completely synergize resource taxing relationships via premier niche markets. Profess tionally cultivate one-to-one customer service with robust ideas” </blockquote>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<ul>
+								<li>Texto</li>
+								<li>Texto</li>
+								<li>Texto</li>
+							</ul>
+							<p class="c-date">May 16, 2018 |  Posteado por <strong>Dr. Luisa Cea, Pediatra Universidad de Chile.</strong></p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea satham non numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+							<h2>Enim ipsam voluptatem quia voluptas</h2>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<blockquote>“ Completely synergize resource taxing relationships via premier niche markets. Profess tionally cultivate one-to-one customer service with robust ideas” </blockquote>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<ul>
+								<li>Texto</li>
+								<li>Texto</li>
+								<li>Texto</li>
+							</ul>
+							<p class="c-date">May 16, 2018 |  Posteado por <strong>Dr. Luisa Cea, Pediatra Universidad de Chile.</strong></p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea satham non numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+							<h2>Enim ipsam voluptatem quia voluptas</h2>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<blockquote>“ Completely synergize resource taxing relationships via premier niche markets. Profess tionally cultivate one-to-one customer service with robust ideas” </blockquote>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<ul>
+								<li>Texto</li>
+								<li>Texto</li>
+								<li>Texto</li>
+							</ul>
+							<p class="c-date">May 16, 2018 |  Posteado por <strong>Dr. Luisa Cea, Pediatra Universidad de Chile.</strong></p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea satham non numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+							<h2>Enim ipsam voluptatem quia voluptas</h2>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<blockquote>“ Completely synergize resource taxing relationships via premier niche markets. Profess tionally cultivate one-to-one customer service with robust ideas” </blockquote>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<ul>
+								<li>Texto</li>
+								<li>Texto</li>
+								<li>Texto</li>
+							</ul>
+							<p class="c-date">May 16, 2018 |  Posteado por <strong>Dr. Luisa Cea, Pediatra Universidad de Chile.</strong></p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea satham non numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+							<h2>Enim ipsam voluptatem quia voluptas</h2>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<blockquote>“ Completely synergize resource taxing relationships via premier niche markets. Profess tionally cultivate one-to-one customer service with robust ideas” </blockquote>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<ul>
+								<li>Texto</li>
+								<li>Texto</li>
+								<li>Texto</li>
+							</ul>
+							<p class="c-date">May 16, 2018 |  Posteado por <strong>Dr. Luisa Cea, Pediatra Universidad de Chile.</strong></p>
+							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea satham non numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,</p>
+							<h2>Enim ipsam voluptatem quia voluptas</h2>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<blockquote>“ Completely synergize resource taxing relationships via premier niche markets. Profess tionally cultivate one-to-one customer service with robust ideas” </blockquote>
+							<p>Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magniol res eos qui rate voluptatem sequi nesciunt  Neque porro quisquam est qui dolorem ipsum quia dolore sit amet con sectetur adipisci quia suthagara lukuthea sathamnon numquam eius modi tempra. incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam quia dolore sit amet con sectetur adip. quia suthagara lukuthea sathamnon</p>
+							<ul>
+								<li>Texto</li>
+								<li>Texto</li>
+								<li>Texto</li>
+							</ul>
+							<div class="c-single__share">
+								<div class="icon"><span class="fas fa-share-alt"></span></div>
+								<p>Comparte:</p><a href="#">Facebook</a><a href="#">Twitter</a>
+								<div class="c-single__pagination"><a href="#"><span class="fas fa-arrow-left"></span><i>Anterior</i></a>/<a href="#"><i>Siguiente</i><span class="fas fa-arrow-right"></span></a></div>
+							</div>
+						</div>
+						<div class="c-single__aside">
+							<div class="c-single__search">
+								<form action="#">
+									<div class="input search">
+										<input type="text" placeholder="Buscar">
+									</div>
+								</form>
+							</div>
+							<h2>Categorias </h2>
+							<div class="c-single__cats">
+								<div class="c-single__cat"><a href="#">Visión</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Mental</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Corazón</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Sistema Respiratorio</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Dolor e inflamación</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Infantil</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Sistema Digestivo</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Nutrición</a>
+									<div class="count">(15)</div>
+								</div>
+								<div class="c-single__cat"><a href="#">Otros</a>
+									<div class="count">(15)</div>
+								</div>
+							</div>
+							<h2>Posts recientes</h2>
+							<div class="c-single__recents">
+								<div class="c-single__recent">
+									<figure></figure>
+									<div class="info">
+										<h3>Dental patients increased to protection</h3>
+										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
+									</div>
+								</div>
+								<div class="c-single__recent">
+									<figure></figure>
+									<div class="info">
+										<h3>Dental patients increased to protection</h3>
+										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
+									</div>
+								</div>
+								<div class="c-single__recent">
+									<figure></figure>
+									<div class="info">
+										<h3>Dental patients increased to protection</h3>
+										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
+									</div>
+								</div>
+								<div class="c-single__recent">
+									<figure></figure>
+									<div class="info">
+										<h3>Dental patients increased to protection</h3>
+										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="c-single__recents">
+								<img src="/assets_web/img/2-S-L.png" alt="" width="90%" style="margin: 40px auto;">
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</main>
 
 @stop

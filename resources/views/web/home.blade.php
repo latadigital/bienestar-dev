@@ -3,7 +3,7 @@
 @section('content')
 			<main role="main">
 				<div class="c-bigbanner">
-					<div class="c-bigbanner__slides">
+					<div class="c-bigbanner__slides owl-carousel owl-theme" id="slider">
 						<div class="c-bigbanner__slide">
 							<div class="c-bigbanner__image"><img src="/assets_web/img/home-bigbanner.jpg" alt=""></div>
 							<div class="c-bigbanner__info">
@@ -11,6 +11,24 @@
 									<h2 class="animated bounce fadeInDown"><span>Nuevo </span>programa de</h2>
 									<h1 class=" animated bounce fadeInUp">Descuento</h1>
 								</hgroup><span class=" animated bounce fadeInUp"> <i>en </i>medicamentos</span>
+							</div>
+						</div>
+						<div class="c-bigbanner__slide">
+							<div class="c-bigbanner__image"><img src="/assets_web/img/4-S.jpg" alt=""></div>
+							<div class="c-bigbanner__info">
+								<hgroup>
+									<h2 class="animated bounce fadeInDown"><span>¿Cómo </span>reconocer la</h2>
+									<h1 class=" animated bounce fadeInUp">Tos Infantil</h1>
+								</hgroup><span class=" animated bounce fadeInUp"> <i>¡Cuídemos </i>a nuestros hijos!</span>
+							</div>
+						</div>
+						<div class="c-bigbanner__slide">
+							<div class="c-bigbanner__image"><img src="/assets_web/img/5-S.jpg" alt=""></div>
+							<div class="c-bigbanner__info">
+								<hgroup>
+									<h2 class="animated bounce fadeInDown"><span>¡CONOCE </span>todo sobre la</h2>
+									<h1 class=" animated bounce fadeInUp">fiebre</h1>
+									</hgroup><span class=" animated bounce fadeInUp"> <i>¡Cuídemos </i>a nuestros hijos!</span>
 							</div>
 						</div>
 					</div>
@@ -44,13 +62,37 @@
 						</div>
 						<div class="c-savalInfo__box c-savalInfo__box--lightBlue c-savalInfo__box--iconBg">
 							<h3>Nuestra <strong>Planta de Producción </strong>Farmacéutica<br><small>Galeria de fotos</small></h3>
-							<div class="gallery">
-								<figure><img src="/assets_web/img/gallery-item.jpg"></figure>
-								<figure><img src="/assets_web/img/gallery-item.jpg"></figure>
-								<figure><img src="/assets_web/img/gallery-item.jpg"></figure>
-								<figure><img src="/assets_web/img/gallery-item.jpg"></figure>
-								<figure><img src="/assets_web/img/gallery-item.jpg"></figure>
-								<figure><img src="/assets_web/img/gallery-item.jpg"></figure>
+							<div class="gallery" id="links">
+								<a href="/assets_web/img/about-gallery-1.jpg" data-fancybox="gallery">
+									<figure>
+										<img src="/assets_web/img/about-gallery-1.jpg">
+									</figure>
+								</a>
+								<a href="/assets_web/img/about-gallery-2.jpg" data-fancybox="gallery">
+									<figure>
+										<img src="/assets_web/img/about-gallery-2.jpg">
+									</figure>
+								</a>
+								<a href="/assets_web/img/about-gallery-3.jpg" data-fancybox="gallery">
+									<figure>
+										<img src="/assets_web/img/about-gallery-3.jpg">
+									</figure>
+								</a>
+								<a href="/assets_web/img/about-gallery-4.jpg" data-fancybox="gallery">
+									<figure>
+										<img src="/assets_web/img/about-gallery-4.jpg">
+									</figure>
+								</a>
+								<a href="/assets_web/img/about-gallery-5.jpg" data-fancybox="gallery">
+									<figure>
+										<img src="/assets_web/img/about-gallery-5.jpg">
+									</figure>
+								</a>
+								<a href="/assets_web/img/about-gallery-6.jpg" data-fancybox="gallery">
+									<figure>
+										<img src="/assets_web/img/about-gallery-6.jpg">
+									</figure>
+								</a>
 							</div>
 						</div>
 					</div>
