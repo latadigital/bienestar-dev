@@ -80,7 +80,7 @@
 				</div>
 				<div class="c-buscadorResultados">
 					<div class="c-inner">
-						<h1>Resultados</h1>
+						<h1>Resultados<span>Buscador de descuentos en medicamentos</span></h1>
 						<div class="c-buscadorResultados__items">
 							<div class="c-buscadorResultados__item">
 								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
