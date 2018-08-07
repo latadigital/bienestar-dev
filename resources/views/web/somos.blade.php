@@ -47,7 +47,7 @@
 							<li>Oftarmología</li>
 							<li>Dermatología</li>
 							<li>Otorrinolaringología</li>
-							<li>Gastroeneterología</li>
+							<li>Gastroenterología</li>
 							<li>Pediatría</li>
 							<li>Infectología</li>
 							<li>Salud Femenina</li>

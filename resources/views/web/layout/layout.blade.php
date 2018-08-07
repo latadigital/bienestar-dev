@@ -93,7 +93,7 @@
 
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7YP48-E060udEXnypBIPVSYtC1Shf6A&amp;callback=initMap" async defer></script>
 			<script src="/assets_web/js/map.js"></script>
-
+			<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 			<script src="/assets_web/js/main.min.js"></script>
 
 
@@ -123,14 +123,14 @@
 						<div class="c-footer__box">
 							<h2>Páginas</h2>
 							<ul> 
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Quiénes somos</a></li>
-								<li><a href="#">Programa de Descuento </a></li>
+								<li><a href="/">Home</a></li>
+								<li><a href="/somos">Quiénes somos</a></li>
+								<li><a href="/programa-descuentos">Programa de Descuento </a></li>
 							</ul>
 							<ul> 
-								<li><a href="#">Temas de Interés</a></li>
-								<li><a href="#">Contacto</a></li>
-								<li><a href="#">Preguntas Frecuentes</a></li>
+								<li><a href="/blog">Temas de Interés</a></li>
+								<li><a href="/contacto">Contacto</a></li>
+								<li><a href="/faqs">Preguntas Frecuentes</a></li>
 							</ul>
 						</div>
 						<div class="c-footer__box">

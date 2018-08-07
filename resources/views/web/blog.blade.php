@@ -5,7 +5,7 @@
 			<div class="c-breadcrumb">
 				<div class="c-inner">
 					<ul>
-						<li><a href="#">Home /</a></li>
+						<li><a href="/">Home /</a></li>
 						<li><a href="#">Temas de Interés</a></li>
 					</ul>
 				</div>
@@ -17,20 +17,21 @@
 				<div class="c-blog__filtros">
 					<div class="c-inner">
 						<ul>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-vision-white.svg" alt=""></span>Visión</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-mental-white.svg" alt=""></span>Mental</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-corazon-white.svg" alt=""></span>Corazón</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-respiratorio-white.svg" alt=""></span>Sistema Respiratorio</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-dolor-white.svg" alt=""></span>Dolor e Inflamación</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-infantil-white.svg" alt=""></span>Infantil</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-gastrico-white.svg" alt=""></span>Sistema Digestivo</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-nutricion-white.svg" alt=""></span>Nutrición</a></li>
-							<li><a href="#"><span><img src="/assets_web/img/iconos/icon-otros-white.svg" alt=""></span>Otros</a></li>
+							<li><a href="/categorias/vision"><span><img src="/assets_web/img/iconos/icon-vision-white.svg" alt=""></span>Visión</a></li>
+							<li><a href="/categorias/mental"><span><img src="/assets_web/img/iconos/icon-mental-white.svg" alt=""></span>Mental</a></li>
+							<li><a href="/categorias/corazon"><span><img src="/assets_web/img/iconos/icon-corazon-white.svg" alt=""></span>Corazón</a></li>
+							<li><a href="/categorias/sistema-respiratorio"><span><img src="/assets_web/img/iconos/icon-respiratorio-white.svg" alt=""></span>Sistema Respiratorio</a></li>
+							<li><a href="/categorias/dolor-e-inflamacion"><span><img src="/assets_web/img/iconos/icon-dolor-white.svg" alt=""></span>Dolor e Inflamación</a></li>
+							<li><a href="/categorias/infantil"><span><img src="/assets_web/img/iconos/icon-infantil-white.svg" alt=""></span>Infantil</a></li>
+							<li><a href="/categorias/sistema-digestivo"><span><img src="/assets_web/img/iconos/icon-gastrico-white.svg" alt=""></span>Sistema Digestivo</a></li>
+							<li><a href="/categorias/nutricion"><span><img src="/assets_web/img/iconos/icon-nutricion-white.svg" alt=""></span>Nutrición</a></li>
+							<li><a href="/categorias/otros"><span><img src="/assets_web/img/iconos/icon-otros-white.svg" alt=""></span>Otros</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="c-blog__content">
 					<div class="c-inner">
+						<!--<h2 class="c-blog__orangeTitle"><strong>Infantil</strong></h2>-->
 						<h2 class="c-blog__orangeTitle"><strong>Infantil</strong></h2>
 						<p>Porque lo que les suceda a nuestros niños  puede afectarles en el futuro, es importante saber cómo cuidarlos, cuáles son las enfermedades más comunes que pueden afectarlos y qué hacer para que crezcan sanos y felices.</p>
 						<div class="c-blog__articles">
