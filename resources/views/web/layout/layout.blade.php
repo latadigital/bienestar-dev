@@ -59,7 +59,7 @@
 								<li><a href="/">Home</a></li>
 								<li><a href="/somos">Quiénes somos</a></li>
 								<li><a href="/programa-descuentos">Programa de descuento</a></li>
-								<li><a href="/blog">Temas de interés</a></li>
+								<li><a href="/categorias/infantil">Temas de interés</a></li>
 								<li><a href="/contacto">Contacto</a></li>
 							</ul>
 						</nav>
@@ -74,7 +74,7 @@
 						<li><a href="/">Home</a></li>
 						<li><a href="/somos">Quienes somos</a></li>
 						<li><a href="/programa-descuentos">Programa de descuento</a></li>
-						<li><a href="/blog">Temas de interés</a></li>
+						<li><a href="/categorias/infantil">Temas de interés</a></li>
 						<li><a href="/contacto">Contacto	</a></li>
 					</ul>
 				</nav>
@@ -128,7 +128,7 @@
 								<li><a href="/programa-descuentos">Programa de Descuento </a></li>
 							</ul>
 							<ul> 
-								<li><a href="/blog">Temas de Interés</a></li>
+								<li><a href="/categorias/infantil">Temas de Interés</a></li>
 								<li><a href="/contacto">Contacto</a></li>
 								<li><a href="/faqs">Preguntas Frecuentes</a></li>
 							</ul>

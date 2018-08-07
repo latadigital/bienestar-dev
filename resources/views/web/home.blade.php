@@ -19,7 +19,7 @@
 								<hgroup>
 									<h2 class="animated bounce fadeInDown"><span>¿Cómo </span>reconocer la</h2>
 									<h1 class=" animated bounce fadeInUp">Tos Infantil</h1>
-								</hgroup><span class=" animated bounce fadeInUp"> <i>¡Cuídemos </i>a nuestros hijos!</span>
+								</hgroup><span class=" animated bounce fadeInUp"> <i>¡Cuidemos </i>a nuestros hijos!</span>
 							</div>
 						</div>
 						<div class="c-bigbanner__slide">
@@ -28,7 +28,7 @@
 								<hgroup>
 									<h2 class="animated bounce fadeInDown"><span>¡CONOCE </span>todo sobre la</h2>
 									<h1 class=" animated bounce fadeInUp">fiebre</h1>
-									</hgroup><span class=" animated bounce fadeInUp"> <i>¡Cuídemos </i>a nuestros hijos!</span>
+									</hgroup><span class=" animated bounce fadeInUp"> <i>¡Cuidemos </i>a nuestros hijos!</span>
 							</div>
 						</div>
 					</div>
@@ -40,7 +40,9 @@
 						<div class="c-homeAbout__description">
 							<h1 class="c-info__h1 u-mb30 "><span>Programa de descuento en medicamentos</span></h1>
 							<p class="c-info__parrafo">Para nosotros la salud de las personas es lo más importante, Por eso hemos creado un exclusivo programa de descuento en medicamentos de alta calidad para facilitar el cumplimiento de la terapia que su médico ha indicado.</p>
-							<div class="c-info__link c-info__link--mobileInline"><span>+ </span>Buscar descuento</div>
+							<a href="/somos" class="c-info__link c-info__link--mobileInline" title="enlace a quiénes somos">
+								<span>+ </span>Buscar descuento
+							</a>
 						</div>
 					</div>
 				</div>
@@ -100,7 +102,8 @@
 				<div class="c-savaTemas">
 					<div class="c-inner">
 						<h1 class="c-info__h1 c-info__h1--inline-block u-mb30"><span>Temas de interés</span></h1>
-						<p class="c-savaTemas__bajada u-mb90">En esta sección usted encontrará artículos relacionados con temas generales de salud, tanto para adultos como niños, que le ayudarán a profundizar sus conocimientos respecto de diversas enfermedades, recomendaciones para llevar una vida más saludable.<a href="#"><strong>Ingrese aquí.</strong></a></p>
+						<p class="c-savaTemas__bajada u-mb90">En esta sección usted encontrará artículos relacionados con temas generales de salud, tanto para adultos como niños, que le ayudarán a profundizar sus conocimientos respecto de diversas enfermedades, recomendaciones para llevar una vida más saludable.
+						<a href="/categorias/infantil"><strong>Ingrese aquí.</strong></a></p>
 						<div class="c-savaTemas__boxes">
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
