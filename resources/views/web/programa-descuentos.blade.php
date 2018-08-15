@@ -83,19 +83,19 @@
 						<h1>Resultados<span>Buscador de descuentos en medicamentos</span></h1>
 						<div class="c-buscadorResultados__items">
 							<div class="c-buscadorResultados__item">
-								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
+								<p><strong>Cefirax</strong>  ® Cefpodoxima - 10 Comprimidos recubiertos</p>
 								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 							<div class="c-buscadorResultados__item">
-								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
+								<p><strong>Cefirax</strong>  ® Cefpodoxima - 10 Comprimidos recubiertos</p>
 								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 							<div class="c-buscadorResultados__item">
-								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
+								<p><strong>Cefirax</strong>  ® Cefpodoxima - 10 Comprimidos recubiertos</p>
 								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 							<div class="c-buscadorResultados__item">
-								<p>Cefirax ® Cefpodoxima - 10 Comprimidos recubiertos</p>
+								<p><strong>Cefirax</strong>  ® Cefpodoxima - 10 Comprimidos recubiertos</p>
 								<div class="actions"><span>$-3.000</span><a class="buscadorResultados__button" href="#">Generar cupón</a></div>
 							</div>
 						</div>
@@ -126,13 +126,12 @@
 						<p>¡No se preocupe, nosotros le ayudamos!
 							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+salcobrand/@-33.424048,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Salcobrand</strong></a></div>
 							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+ahumada/@-33.4240474,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>farmaciass Ahumada</strong></a></div>
-							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+cruz+verde/@-33.4240468,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacia Cruz Verde</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+cruz+verde/@-33.4240468,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Cruz Verde</strong></a></div>
 							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+carmen/@-33.4240462,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Carmen</strong></a></div>
 							<div class="c-mapa__item"><a href="https://www.google.com/maps/place/Red+Farma/@-33.442526,-70.6700345,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5acbd6e39bb:0xa3eacbb03a1c69f9!8m2!3d-33.442526!4d-70.6678458" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Redfarma</strong></a></div>
 						</p>
 					</div>
 				</div>
-
 
 
 				<div class="c-modalCupon" style="display:none;">
@@ -157,7 +156,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="c-modalCupon__buttons"><a href="#"><span></span>Guardar</a><a href="#"><span> </span>Imprimir</a><a href="#">Enviar por correo</a><a href="#">Enviar por mensaje de texto</a></div>
+						<div class="c-modalCupon__buttons">
+						<!--<a href="#"><span></span>Guardar</a>-->
+						<a href="#"><span> </span>Imprimir</a>
+						<a href="#">Enviar por correo</a>
+						<a href="#">Enviar por mensaje de texto</a></div>
 					</div>
 				</div>
 

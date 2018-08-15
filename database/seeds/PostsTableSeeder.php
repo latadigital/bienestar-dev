@@ -18,12 +18,6 @@ class PostsTableSeeder extends Seeder
                 rand(4,6),
                 rand(7,9),
             ]);
-
-            $post->tags()->attach([
-                rand(1,5),
-                rand(6,14),
-                rand(15,20),
-            ]);
         });
     }
 }

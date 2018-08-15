@@ -26,7 +26,7 @@
 				<div class="c-inner">
 					<div class="c-top__nav">
 						<ul>
-							<li><a href="faq">Preguntas frecuentes</a></li>
+							<li><a href="/faqs">Preguntas frecuentes</a></li>
 							<li><a href="#">Términos y condiciones</a></li>
 						</ul>
 					</div>
@@ -108,42 +108,46 @@
 						<div class="c-footerLocation__box c-footerLocation__box--darkOrange">
 							<div class="c-footerLocation__icon c-footerLocation__icon--darkOrange"><img src="/assets_web/img/iconos/icon-email.svg" alt="Location"></div>
 							<h2>Email</h2>
-							<p>contacto@bienestarsaval.cl</p>
+							<p><a href="mailto:contacto@bienestarsaval.cl"> contacto@bienestarsaval.cl</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+
 			<footer class="c-footer">
 				<div class="c-inner">
 					<div class="c-footer__boxes">
 						<div class="c-footer__box">
 							<figure><img src="/assets_web/img/footer-logo-v2.png" alt="Saval"></figure>
-							<p>Programa de Descuento en medicamentos <br />de Laboratorios SAVAL.</p>
+							<p>Programa de descuento en medicamentos de Laboratorios SAVAL.</p>
 						</div>
 						<div class="c-footer__box">
-							<h2>Páginas</h2>
+							<h2>Paginas</h2>
 							<ul> 
 								<li><a href="/">Home</a></li>
 								<li><a href="/somos">Quiénes somos</a></li>
 								<li><a href="/programa-descuentos">Programa de Descuento </a></li>
-							</ul>
-							<ul> 
 								<li><a href="/categorias/infantil">Temas de Interés</a></li>
 								<li><a href="/contacto">Contacto</a></li>
 								<li><a href="/faqs">Preguntas Frecuentes</a></li>
 							</ul>
 						</div>
 						<div class="c-footer__box">
-							<h2>¡Suscríbase a nuestros Temas de Interés! </h2>
-							<p>Recibirá semanalmente artículos relevantes y recomendaciones para cuidar su salud.</p>
+							<h2>Suscribete a nuestros Temas de interés</h2>
+							<p>Mantente actualizado, recibe noticias, artículos y tips sobre vida saludable, solo debes suscribirte.</p>
 							<form action="#">
 								<div class="input email">
 									<input type="text" placeholder="Email">
 								</div>
 								<div class="input submit">
-									<input type="submit" value="Enviar">
+									<input type="submit" value="">
 								</div>
 							</form>
+						</div>
+						<div class="c-footer__box c-logo-footer">
+							<figure><img src="/assets_web/img/logo-saval-footer.png" alt="Saval"></figure>
+							<p>Laboratorios SAVAL.<strong>www.saval.cl</strong></p>
 						</div>
 					</div>
 				</div>

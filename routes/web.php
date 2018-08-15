@@ -22,6 +22,7 @@ Route::get('/blog', 'web\BlogController@index')->name('blog');
 Route::get('/contacto', 'web\ContactoController@index')->name('contacto');
 Route::get('/somos', 'web\SomosController@index')->name('Somos');
 Route::get('/programa-descuentos', 'web\ProgramaDescuentosController@index')->name('Programa_Descuentos');
+Route::get('/faqs', 'web\FaqController@index')->name('Faqs');
 
 Route::get('/blog/{slug}','web\BlogController@post')->name('post');
 

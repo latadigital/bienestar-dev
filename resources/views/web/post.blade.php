@@ -163,33 +163,12 @@
 							</div>
 							<h2>Categorias </h2>
 							<div class="c-single__cats">
-								<div class="c-single__cat"><a href="#">Visión</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Mental</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Corazón</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Sistema Respiratorio</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Dolor e inflamación</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Infantil</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Sistema Digestivo</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Nutrición</a>
-									<div class="count">(15)</div>
-								</div>
-								<div class="c-single__cat"><a href="#">Otros</a>
-									<div class="count">(15)</div>
-								</div>
+
+								@foreach($categories as $category)
+									<div class="c-single__cat"><a href="{{ route('category', $category->slug) }}">{{ $category->name }}</a>
+										<div class="count">(15)</div>
+									</div>
+								@endforeach
 							</div>
 							<h2>Posts recientes</h2>
 							<div class="c-single__recents">
