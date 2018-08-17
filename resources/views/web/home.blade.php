@@ -102,7 +102,7 @@
 				<div class="c-savaTemas">
 					<div class="c-inner">
 						<h1 class="c-info__h1 c-info__h1--inline-block u-mb30"><span>Temas de interés</span></h1>
-						<p class="c-savaTemas__bajada u-mb90">En esta sección usted encontrará artículos relacionados con temas generales de salud, tanto para adultos como niños, que le ayudarán a profundizar sus conocimientos respecto de diversas enfermedades, recomendaciones para llevar una vida más saludable. El contenido de estos artículos no fomentan el autodiagnóstico, como tampoco, la automedicación sólo cumplen la función de informar. Siempre consulte a su médico.
+						<p class="c-savaTemas__bajada u-mb90">En esta sección usted encontrará artículos relacionados con temas generales de salud, tanto para adultos como niños, que le ayudarán a profundizar sus conocimientos respecto de diversas enfermedades, recomendaciones para llevar una vida más saludable. <br />El contenido de estos artículos no fomentan el autodiagnóstico, como tampoco, la automedicación sólo cumplen la función de informar. Siempre consulte a su médico.
 						<a href="/categorias/infantil"><strong>Ingrese aquí.</strong></a></p>
 						<div class="c-savaTemas__boxes">
 							
