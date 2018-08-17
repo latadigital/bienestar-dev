@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Http\Controllers\web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ProgramaDescuentosController extends Controller
+class SomosController extends Controller
 {
     function __construct(){
 
     }
 
     function index(){
-        return view('web.programa-descuentos');
+        return view('web.somos');
     }
 }

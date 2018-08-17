@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\web;
+namespace App\Http\Controllers\Web;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -14,9 +14,6 @@ use App\Category;
 
 class BlogController extends Controller
 {
-    function __construct(){
-
-    }
 
     function index(){
         $posts = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
@@ -28,7 +25,8 @@ class BlogController extends Controller
             $query->where('slug', $slug);
         })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate();
        
-       $category = DB::table('categories')->get();
+        $category = DB::table('categories')->get();
+
         return view('web.blog', compact('posts'), ['categories' => $category]);
     }
     

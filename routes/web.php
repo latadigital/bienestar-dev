@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/blog', 'web\BlogController@index')->name('blog');
 Route::get('/contacto', 'web\ContactoController@index')->name('contacto');
+Route::post('/contacto', 'web\ContactoController@store')->name('contacto.store');
 Route::get('/somos', 'web\SomosController@index')->name('Somos');
 Route::get('/programa-descuentos', 'web\ProgramaDescuentosController@index')->name('Programa_Descuentos');
 Route::get('/faqs', 'web\FaqController@index')->name('Faqs');
@@ -29,16 +30,16 @@ Route::get('/blog/{slug}','web\BlogController@post')->name('post');
 
 // HEAD
 Route::get('/categorias/{slug}','web\BlogController@category')->name('category');
-Route::get('/tags/{slug}','web\BlogController@tag')->name('tag');
+//Route::get('/tags/{slug}','web\BlogController@tag')->name('tag');
 
 
 
 
 //ADMIN
 
-Route::resource('tags', 'Admin\TagController');
-Route::resource('categories', 'Admin\CategoryController');
-Route::resource('posts', 'Admin\PostController');
+//Route::resource('tags', 'Admin\TagController');
+//Route::resource('categories', 'Admin\CategoryController');
+//Route::resource('posts', 'Admin\PostController');
 
 
 // Route::get('/categorias/{slug}','web\BlogController@post')->name('post');
