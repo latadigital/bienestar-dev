@@ -17,8 +17,8 @@
 						<div class="c-AboutUs__image"><img src="assets_web/img/about-thumb.png"></div>
 						<div class="c-AboutUs__description">
 							<h1 class="c-info__h1 u-mb30 c-info__h1--font20"><span>Quiénes Somos</span></h1>
-							<p class="c-info__parrafo"> <strong>Laboratorios SAVAL</strong> es una empresa chilena con más de 80 años de trayectoria, cuya calidad e innovación son ampliamente reconocidas por el cuerpo médico.</p>
-							<p class="c-info__parrafo">En nuestra compañía contamos con profesionales altamente calificados y con modernas instalaciones en las que se utilizan equipos de última generación y constantes sistemas de control para garantizar el alto estándar de calidad y seguridad que los medicamentos requieren.</p>
+							<p class="c-info__parrafo"> <strong>Laboratorios SAVAL</strong>es una empresa chilena con más de 80 años de trayectoria, cuya calidad e innovación son ampliamente reconocidas por el cuerpo médico.</p>
+							<p class="c-info__parrafo">En nuestra compañía contamos con profesionales altamente calificados y con modernas instalaciones en las que se utilizan equipos de última generación y constantes sistemas de control para garantizar el alto estandar de calidad y seguridad que los medicamentos requieren.</p>
 							<p class="c-info__parrafo">Para <strong>Laboratorios SAVAL </strong>lo más importante es la salud y bienestar de las personas y todos nuestros esfuerzos están orientados en ese sentido.</p>
 						</div>
 					</div>

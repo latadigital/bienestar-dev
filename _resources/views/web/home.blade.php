@@ -102,14 +102,14 @@
 				<div class="c-savaTemas">
 					<div class="c-inner">
 						<h1 class="c-info__h1 c-info__h1--inline-block u-mb30"><span>Temas de interés</span></h1>
-						<p class="c-savaTemas__bajada u-mb90">En esta sección usted encontrará artículos relacionados con temas generales de salud, tanto para adultos como niños, que le ayudarán a profundizar sus conocimientos respecto de diversas enfermedades, recomendaciones para llevar una vida más saludable. El contenido de estos artículos no fomentan el autodiagnóstico, como tampoco, la automedicación sólo cumplen la función de informar. Siempre consulte a su médico.
+						<p class="c-savaTemas__bajada u-mb90">En esta sección usted encontrará artículos relacionados con temas generales de salud, tanto para adultos como niños, que le ayudarán a profundizar sus conocimientos respecto de diversas enfermedades, recomendaciones para llevar una vida más saludable.
 						<a href="/categorias/infantil"><strong>Ingrese aquí.</strong></a></p>
 						<div class="c-savaTemas__boxes">
 							
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-infantil.svg "></figure><span>Infantil</span>
-								<p>Porque lo que les suceda a nuestros niños  puede afectarles en el futuro, es importante saber cómo cuidarlos, cuáles son las enfermedades más comunes que pueden afectarlos y qué hacer para que crezcan sanos y felices.</p><a href="/categorias/infantil"><span>+</span>Ver todos los articulos</a>
+								<p>Porque lo que les suceda a nuestros niños  puede afectarles en el futuro, es importante saber cómo cuidarlos, cuáles son las enfermedades más comunes que pueden afectarlos y qué hacer para que crezcan sanos y felices.</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 
 							<div class="c-savaTemas__box">
@@ -165,47 +165,47 @@
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-infantil.svg "></figure><span>Infantil</span>
-								<p>Porque lo que les suceda a nuestros niños  puede afectarles en el futuro, es importante saber cómo cuidarlos, cuáles son las enfermedades más comunes que pueden afectarlos y qué hacer para que crezcan sanos y felices. <a href="/categorias/infantil"><span>+</span>Ver todos los articulos</a></p>
+								<p>Porque lo que les suceda a nuestros niños  puede afectarles en el futuro, es importante saber cómo cuidarlos, cuáles son las enfermedades más comunes que pueden afectarlos y qué hacer para que crezcan sanos y felices.</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-corazon.svg "></figure><span>Corazón</span>
-								<p>Las enfermedades cardiacas son la principal causa de muerte en todo el mundo. En esta sección encontrará artículos que le ayudarán a conocerlas, prevenirla o a convivir con ellas. <a href="/categorias/corazon"><span>+</span>Ver todos los articulos</a></p>
+								<p>Las enfermedades cardiacas son la principal causa de muerte en todo el mundo. En esta sección encontrará artículos que le ayudarán a conocerlas, prevenirla o a convivir con ellas.</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-respiratorio.svg "></figure><span>Sistema Respiratorio</span>
-								<p>Un adulto lleva aire a sus pulmones y lo expulsa entre 12 y 20 veces por minuto, de manera automática. Pero las personas que aprenden a respirar de manera consciente pueden mejorar su salud física e incluso mental. Encuentre información relacionada con enfermedades respiratorias y algunos importantes consejos para mejorar la respiración. <a href="/categorias/sistema-respiratorio"><span>+</span>Ver todos los articulos</a></p>
+								<p>Un adulto lleva aire a sus pulmones y lo expulsa entre 12 y 20 veces por minuto, de manera automática. Pero las personas que aprenden a respirar de manera consciente pueden mejorar su salud física e incluso mental. Encuentre información relacionada con enfermedades respiratorias y algunos importantes consejos para mejorar la respiración.</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-nutri.svg"></figure><span>Nutrición</span>
-								<p>La nutrición aporta al organismo las sustancias para desarrollarse y sobrevivir. Una nutrición inadecuada puede conducir tanto a un sobrepeso como a un bajo peso, y ambos estados se relacionan con diferentes enfermedades. Opte por una vida sana e infórmese acerca de las ventajas de tener una buena nutrición. <a href="/categorias/nutricion"><span>+</span>Ver todos los articulos</a></p>
+								<p>La nutrición aporta al organismo las sustancias para desarrollarse y sobrevivir. Una nutrición inadecuada puede conducir tanto a un sobrepeso como a un bajo peso, y ambos estados se relacionan con diferentes enfermedades. Opte por una vida sana e infórmese acerca de las ventajas de tener una buena nutrición,</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-gastrico.svg "></figure><span>Sistema Digestivo</span>
-								<p>Los hábitos de alimentación, el cigarrillo, el alcohol, la genética y otros factores pueden afectar el sistema digestivo. Encuentre información relacionada con enfermedades del estómago, del intestino y conozca algunos consejos prácticos para tratarlas. <a href="/categorias/sistema-digestivo"><span>+</span>Ver todos los articulos</a></p>
+								<p>Los hábitos de alimentación, el cigarrillo, el alcohol, la genética y otros factores pueden afectar el sistema digestivo. Encuentre información relacionada con enfermedades del estómago, del intestino y conozca algunos consejos prácticos para tratarlas.</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-dolor.svg "></figure><span>Dolor e Inflamación</span>
-								<p>El dolor y la inflamación surgen como una respuesta natural de nuestro organismo ante una lesión, y aunque muchas veces resultan desagradables e incómodos, suelen ser parte de un proceso de recuperación o de una alerta frente a una enfermedad. <a href="/categorias/dolor-e-inflamacion"><span>+</span>Ver todos los articulos</a></p>
+								<p>El dolor y la inflamación surgen como una respuesta natural de nuestro organismo ante una lesión, y aunque muchas veces resultan desagradables e incómodos, suelen ser parte de un proceso de recuperación o de una alerta frente a una enfermedad.</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-mental.svg "></figure><span>Mental</span>
-								<p>El ritmo de vida acelerado, la competitividad del mundo laboral, dificultades familiares, el tipo de personalidad e incluso factores biológicos pueden ocasionar estrés, insomnio, ansiedad y otros trastornos. <a href="/categorias/mental"><span>+</span>Ver todos los articulos</a></p>
+								<p>El ritmo de vida acelerado, la competitividad del mundo laboral, dificultades familiares, el tipo de personalidad e incluso factores biológicos pueden ocasionar estrés, insomnio, ansiedad y otros trastornos. Ingresa aquí. </p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-vision.svg "></figure><span>Visión</span>
-								<p>La vista es uno de los sentidos más importantes ya que a través de ella captamos el 80% de la información del entorno. Sin embargo, nuestros ojos pueden enfermarse y dañarse. Infórmese acerca de las afecciones más comunes de la vista y sepa cómo prevenirlas o tratarlas. <a href="/categorias/vision"><span>+</span>Ver todos los articulos</a></p>
+								<p>La vista es uno de los sentidos más importantes ya que a través de ella captamos el 80% de la información del entorno. Sin embargo, nuestros ojos pueden enfermarse y dañarse. Infórmese acerca de las afecciones más comunes de la vista y sepa cómo prevenirlas o tratarlas.</p><a href="#"><span>+</span>Ver todos los articulos</a>
 							</div>
 							<div class="c-savaTemas__box">
 								<div class="icon"></div>
 								<figure><img src="/assets_web/img/iconos/icon-nutricion.svg "></figure><span>Otros</span>
-								<p>La salud y el bienestar dependen en gran medida de lo que cada persona elija como estilo de vida. El conocimiento en esta materia puede hacer la diferencia entre preservar o ver afectada la salud. Para profundizar en este tema <a href="/categorias/otros"><span>+</span>Ver todos los articulos																							</a></p>
+								<p>La salud y el bienestar dependen en gran medida de lo que cada persona elija como estilo de vida. El conocmiento en esta materia puede hacer la diferencia entre preservar o ver afectada la salud. Para profundizar en este tema</p><a href="#"><span>+</span>Ver todos los articulos																							</a>
 							</div>
 						</div>
 					</div>
