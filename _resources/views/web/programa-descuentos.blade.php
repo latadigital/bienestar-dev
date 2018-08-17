@@ -7,7 +7,7 @@
 					<div class="c-inner">
 						<ul>
 							<li><a href="#">Home /</a></li>
-							<li><a href="#">Programa de descuento</a></li>
+							<li><a href="#">Planes de descuentos</a></li>
 						</ul>
 					</div>
 				</div>
@@ -16,7 +16,7 @@
 					<div class="c-planesAbout__info">
 						<div class="c-planesAbout__image"><img src="/assets_web/img/planes-descuentos-info.png"></div>
 						<div class="c-planesAbout__description">
-							<h1 class="c-info__h1 u-mb30"><span>Programa de descuento en medicamentos</span></h1>
+							<h1 class="c-info__h1 u-mb30 c-info__h1--font20"><span>Programa de descuento en medicamentos SAVAL</span></h1>
 							<p class="c-info__parrafo">Este programa tiene como objetivo favorecer el acceso a medicamentos de alta calidad a través de descuentos que faciliten el cumplimiento de la terapia que el médico ha indicado. Dichos descuentos en dinero se hacen efectivos al momento de realizar la compra de uno o más de los medicamentos incluidos en este programa.</p>
 						</div>
 					</div>
@@ -47,7 +47,7 @@
 							</div>
 							<div class="c-comoAcceder__item">
 								<div class="icon"><img src="/assets_web/img/planes-icon-2.png"></div>
-								<p>Si su medicamento tiene descuento usted puede imprimir, guardar, o enviar a través de SMS (desde móviles) el <strong>cupón de descuento</strong> correspondiente.</p>
+								<p>Si su medicamento tiene descuento usted puede imprimir, guardar, o enviar a través de SMS (desde móviles) el cupón de descuento correspondiente.</p>
 							</div>
 							<div class="c-comoAcceder__item">
 								<div class="icon"><img src="/assets_web/img/planes-icon-3.png"></div>
@@ -125,14 +125,13 @@
 						<h1>¿No sabe donde está la farmacia más cercana?</h1>
 						<p>¡No se preocupe, nosotros le ayudamos!
 							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+salcobrand/@-33.424048,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Salcobrand</strong></a></div>
-							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+ahumada/@-33.4240474,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Ahumada</strong></a></div>
-							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+cruz+verde/@-33.4240468,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacia Cruz Verde</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+ahumada/@-33.4240474,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>farmaciass Ahumada</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+cruz+verde/@-33.4240468,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Cruz Verde</strong></a></div>
 							<div class="c-mapa__item"><a href="https://www.google.com/maps/search/farmacias+carmen/@-33.4240462,-70.6244739,15z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Carmen</strong></a></div>
-							<div class="c-mapa__item"><a href="https://www.google.com/maps/place/Red+Farma/@-33.442526,-70.6700345,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5acbd6e39bb:0xa3eacbb03a1c69f9!8m2!3d-33.442526!4d-70.6678458" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Redfarma</strong></a></div>
+							<div class="c-mapa__item"><a href="https://www.google.com/maps/place/Red+Farma/@-33.442526,-70.6700345,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5acbd6e39bb:0xa3eacbb03a1c69f9!8m2!3d-33.442526!4d-70.6678458" target="_blank"><i class="fas fa-map-marker-alt"></i><strong>Farmacias Redfarma</strong></a></div>
 						</p>
 					</div>
 				</div>
-
 
 
 				<div class="c-modalCupon" style="display:none;">
@@ -158,7 +157,7 @@
 							</div>
 						</div>
 						<div class="c-modalCupon__buttons">
-						<a href="#"><span></span>Guardar</a>
+						<!--<a href="#"><span></span>Guardar</a>-->
 						<a href="#"><span> </span>Imprimir</a>
 						<a href="#">Enviar por correo</a>
 						<a href="#">Enviar por mensaje de texto</a></div>

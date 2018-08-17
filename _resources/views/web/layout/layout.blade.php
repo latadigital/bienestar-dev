@@ -83,7 +83,7 @@
 			
         @yield('content')
 
-			@yield('js')
+
 			<script src="/assets_web/js/libs/bundle.js"></script>
 			<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 			<!-- inject:js-->
@@ -113,28 +113,29 @@
 					</div>
 				</div>
 			</div>
+			
 
 			<footer class="c-footer">
 				<div class="c-inner">
 					<div class="c-footer__boxes">
 						<div class="c-footer__box">
 							<figure><img src="/assets_web/img/footer-logo-v2.png" alt="Saval"></figure>
-							<p>Programa de descuento en <br />medicamentos de Laboratorios SAVAL.</p>
+							<p>Programa de descuento en  <br />  medicamentos deLaboratorios SAVAL.</p>
 						</div>
 						<div class="c-footer__box">
-							<h2>Páginas</h2>
+							<h2>Paginas</h2>
 							<ul> 
 								<li><a href="/">Home</a></li>
 								<li><a href="/somos">Quiénes somos</a></li>
-								<li><a href="/programa-descuentos">Programa de descuento </a></li>
-								<li><a href="/categorias/infantil">Temas de interés</a></li>
+								<li><a href="/programa-descuentos">Programa de Descuento </a></li>
+								<li><a href="/categorias/infantil">Temas de Interés</a></li>
 								<li><a href="/contacto">Contacto</a></li>
-								<li><a href="/faqs">Preguntas frecuentes</a></li>
+								<li><a href="/faqs">Preguntas Frecuentes</a></li>
 							</ul>
 						</div>
 						<div class="c-footer__box">
 							<h2>Suscríbase a nuestros Temas de interés</h2>
-							<p>Recibirá semanalmente artículos <br /> relevantes y recomendaciones para cuidar su salud.</p>
+							<p>Recibirá semanalmente artículos relevantes y recomendaciones para cuidar su salud.</p>
 							<form action="#">
 								<div class="input email">
 									<input type="text" placeholder="Email">
@@ -145,10 +146,8 @@
 							</form>
 						</div>
 						<div class="c-footer__box c-logo-footer">
-							<a href="https://www.savalcorp.com/es/" target="_blank" title="Enlace a Laboratoris SAVAL"> 
-								<figure><img src="/assets_web/img/logo-saval-footer.png" alt="Saval"></figure>
-								<p>Laboratorios SAVAL.<strong>www.saval.cl</strong></p>
-							</a>	
+							<figure><img src="/assets_web/img/logo-saval-footer.png" alt="Saval"></figure>
+							<p>Laboratorios SAVAL.<strong>www.saval.cl</strong></p>
 						</div>
 					</div>
 				</div>
