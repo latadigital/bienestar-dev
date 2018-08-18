@@ -11,16 +11,23 @@ class Post extends Model
         'user_id', 'name', 'slug', 'excerpt', 'body', 'status', 'file'
     ];
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsToMany(User::class);
     }
 
-    public function categories(){
+    public function categories()
+    {
         return $this->belongsToMany(Category::class);
     }
 
-
-    public function tags(){
+    public function tags()
+    {
         return $this->belongsToMany(Tag::class);
+    }
+
+    public function scopeIsPublished()
+    {
+        $this->where('status', 'PUBLISHED');
     }
 }

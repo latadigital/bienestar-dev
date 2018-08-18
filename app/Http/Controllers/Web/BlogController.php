@@ -20,14 +20,17 @@ class BlogController extends Controller
         return view('web.blog', compact('posts'));
     }
 
-    public function category($slug){
-        $posts = Post::whereHas('categories', function($query) use ($slug){
-            $query->where('slug', $slug);
-        })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate();
-       
-        $category = DB::table('categories')->get();
+    public function category($slug)
+    {
+        $category = Category::query()
+            ->with(['posts' => function ($query) {
+                $query->isPublished()
+                    ->orderByDesc('id')
+                    ->take(15);
+            }])->where('slug', $slug)
+            ->firstOrFail();
 
-        return view('web.blog', compact('posts'), ['categories' => $category]);
+        return view('web.blog', compact('category'));
     }
     
     public function tag($slug){
