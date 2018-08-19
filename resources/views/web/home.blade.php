@@ -227,8 +227,9 @@
 									<input type="text" placeholder="email@ejemplo.cl">
 								</div>
 								<div class="input submit">
-									<input type="submit" value="Enviar">
+									<a class="btnSuscribirse">Enviar</a>
 								</div>
+								
 							</form>
 						</div>
 						<div class="clearfix"></div>
