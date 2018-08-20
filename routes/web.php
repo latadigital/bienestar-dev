@@ -30,23 +30,10 @@ Route::get('/blog/{slug}','web\BlogController@post')->name('post');
 
 // HEAD
 Route::get('/categorias/{slug}','web\BlogController@category')->name('category');
-//Route::get('/tags/{slug}','web\BlogController@tag')->name('tag');
 
 
-
-
-//ADMIN
-
-//Route::resource('tags', 'Admin\TagController');
-//Route::resource('categories', 'Admin\CategoryController');
-//Route::resource('posts', 'Admin\PostController');
-
-
-// Route::get('/categorias/{slug}','web\BlogController@post')->name('post');
-// Route::get('/tags/{slug}','web\BlogController@post')->name('post');
-
-
-
-
-//BLOG
-//Route::get('web/blog', 'web\BlogController@index')->name('blog');
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'Admin\AdminController@index')->name('admin.index');
+    Route::resource('/users', 'Admin\UsersController');
+    Route::resource('/blog', 'Admin\BlogController');
+});

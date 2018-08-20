@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    
     protected $fillable = [
-        'user_id', 'name', 'slug', 'excerpt', 'body', 'status', 'file'
+        'user_id', 'name', 'slug',
+        'excerpt', 'body', 'status',
+        'file'
     ];
 
     public function user()
@@ -26,6 +27,9 @@ class Post extends Model
         return $this->belongsToMany(Tag::class);
     }
 
+    /**
+     * Scope para buscar los Published
+     */
     public function scopeIsPublished()
     {
         $this->where('status', 'PUBLISHED');

@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'is_admin'
     ];
 
     /**
@@ -27,7 +27,38 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function posts(){
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'is_admin' => 'boolean',
+    ];
+
+    protected static function boot()
+    {
+        parent::boot();
+        //Evento cuando se este guardando
+        self::creating(function($user) {
+            $user->is_admin = true;
+        });
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function posts()
+    {
         return $this->hasMany(Post::class);
+    }
+
+    /**
+     * Validacion si el usuario es Admin
+     * @return boolean
+     */
+    public function isAdmin()
+    {
+        return $this->is_admin;
     }
 }
