@@ -20,6 +20,73 @@
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 	</head>
+
+	<div class="modal" id="myModal">
+		<div class="modal-content"><span class="close">&times;</span>
+			<form action="" id="" method="POST" autocomplete="off">
+				<h1 class="c-info__h1 u-mb40"><span>Importante</span></h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus mauris nibh, quam hac in phasellus nisi suspendisse potenti gravida eu, mus dui porttitor aenean quisque accumsan nec aptent malesuada.</p>
+				<div class="form-group">
+					<label for="">
+						<input type="checkbox"> He Le&iacute;do y acepto los t&eacute;rminos y condiciones
+					</label>
+				</div>
+				<div class="form-group">
+					<h2>Elija la Informaci&oacute;n de preferencia</h2>
+				</div>
+				<div class="form-group">
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+					<div class="group-check">
+						<label for="">
+							<input type="checkbox"> Infantil
+						</label>
+					</div>
+				</div>
+				<div class="form-group-full">
+					<a class="btnSuscribirse" href="javascript:void(0)">Suscribirse</a>
+				</div>
+			</form>
+		</div>
+	</div>
 	<body>
 		<div id="wrapper">
 			<div class="c-top">
