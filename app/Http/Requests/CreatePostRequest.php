@@ -31,7 +31,7 @@ class CreatePostRequest extends FormRequest
             'excerpt' => 'required',
             'body' => 'required',
             'status' => 'required',
-            'file' => 'required|file|size:1000|image'
+            'image' => 'required|file|max:1000|image'
         ];
     }
 }

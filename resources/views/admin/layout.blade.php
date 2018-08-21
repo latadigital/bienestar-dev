@@ -17,27 +17,17 @@
     <link href="{{ asset('assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css') }}" rel="stylesheet" />
     <link href="{{ asset('assets/plugins/multiselect/css/multi-select.css') }}"  rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/plugins/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css" />
-
     <!-- Switchery css -->
     <link href="{{ asset('assets/plugins/switchery/switchery.min.css') }}" rel="stylesheet" />
-
     <!-- Bootstrap CSS -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-
     <!-- App CSS -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
-
     <!-- Modernizr js -->
     <script src="{{ asset('assets/js/modernizr.min.js') }}"></script>
 
     <!-- form Uploads -->
     <link href="{{ asset('assets/plugins/fileuploads/css/dropify.min.css') }}" rel="stylesheet" type="text/css" />
-
-    <style>
-        .form-group{
-            margin: 0 auto 40px auto !important;
-        }
-    </style>
     <!--Morris Chart CSS -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/morris/morris.css') }}">
     <!-- Bootstrap CSS -->
@@ -46,6 +36,12 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css" />
     <!-- Modernizr js -->
     <script src="{{ asset('assets/js/modernizr.min.js') }}"></script>
+    <style>
+        .form-group{
+            margin: 0 auto 40px auto !important;
+        }
+    </style>
+    @yield('css')
 </head>
 
 <body class="fixed-left">

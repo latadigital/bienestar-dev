@@ -152,7 +152,7 @@
 
 			@yield('js')
 			<script src="/assets_web/js/libs/bundle.js"></script>
-			<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+			<!--<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>-->
 			<!-- inject:js-->
 			<!-- endinject-->
 			<script src="/assets_web/js/libs/owl-carousel/owl.carousel.min.js"></script>

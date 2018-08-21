@@ -21,8 +21,7 @@
                                 En este módulo puedes crear una entrada al blog.
                             </p>
                             <div class="p-20">
-                                {{ $errors }}
-                                <form action="{{ route('blog.store') }}" method="post" @if($errors->any())class="was-validated" @endif>
+                                <form action="{{ route('blog.store') }}" method="post" @if($errors->any())class="was-validated" @endif enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <div class="form-group">
                                         <label>Titulo<span class="text-danger">*</span></label>
@@ -83,7 +82,7 @@
                                     <div class="form-group">
                                         <div class="card-box">
                                             <h4 class="header-title m-t-0 m-b-30">Imagen Destacada</h4>
-                                            <input type="file" name="file" class="dropify" data-max-file-size="1M" />
+                                            <input type="file" name="image" class="dropify" data-max-file-size="1M" />
                                             <div class="invalid-feedback">
                                                 {{ implode(', ', $errors->get('file')) }}
                                             </div>
@@ -107,10 +106,6 @@
                                             </label>
                                         </div>
                                     </div>
-
-
-
-
                                     <div class="form-group text-right m-b-0">
                                         <button class="btn btn-primary waves-effect waves-light" type="submit">
                                             Crear
