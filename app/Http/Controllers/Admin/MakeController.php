@@ -65,7 +65,7 @@ class MakeController extends Controller
      */
     public function edit(Make $make)
     {
-        //
+        return view('admin.makes.create', compact('make'));
     }
 
     /**
@@ -77,7 +77,13 @@ class MakeController extends Controller
      */
     public function update(Request $request, Make $make)
     {
-        //
+        $request->validate([
+            'name' => 'required'
+        ]);
+
+        $make->update($request->all());
+
+        return redirect()->route('admin.makes.index');
     }
 
     /**

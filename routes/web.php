@@ -37,4 +37,5 @@ Route::group(['prefix' => 'admin'], function () {
     Route::resource('/users', 'Admin\UsersController');
     Route::resource('/blog', 'Admin\BlogController');
     Route::resource('/make', 'Admin\MakeController');
+    Route::resource('/discount', 'Admin\MakeController');
 });

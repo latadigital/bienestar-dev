@@ -130,8 +130,8 @@
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-assignment-account"></i> <span> Descuentos </span> <span class="menu-arrow"></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="#">Listar</a></li>
-                            <li><a href="#">Agregar</a></li>
+                            <li><a href="{{ route('discount.index') }}">Listar</a></li>
+                            <li><a href="{{ route('discount.create') }}">Agregar</a></li>
                         </ul>
                     </li>
                     <li class="has_sub">
