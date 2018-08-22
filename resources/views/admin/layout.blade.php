@@ -106,7 +106,6 @@
                     <li class="has_sub">
                         <a href="{{ route('admin.index') }}" class="waves-effect"><span class="label label-pill label-primary float-right">1</span><i class="zmdi zmdi-view-dashboard"></i><span> Inicio </span> </a>
                     </li>
-
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-assignment-account"></i> <span> Administradores </span> <span class="menu-arrow"></span></a>
                         <ul class="list-unstyled">
@@ -119,6 +118,13 @@
                         <ul class="list-unstyled">
                             <li><a href="{{ route('blog.index') }}">Listar</a></li>
                             <li><a href="{{ route('blog.create') }}">Agregar</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_sub">
+                        <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-assignment-account"></i> <span> Marcas</span> <span class="menu-arrow"></span></a>
+                        <ul class="list-unstyled">
+                            <li><a href="{{ route('make.index') }}">Listar</a></li>
+                            <li><a href="{{ route('make.create') }}">Agregar</a></li>
                         </ul>
                     </li>
                     <li class="has_sub">

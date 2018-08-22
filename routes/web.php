@@ -36,4 +36,5 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/', 'Admin\AdminController@index')->name('admin.index');
     Route::resource('/users', 'Admin\UsersController');
     Route::resource('/blog', 'Admin\BlogController');
+    Route::resource('/make', 'Admin\MakeController');
 });
