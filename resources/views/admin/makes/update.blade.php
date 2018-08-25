@@ -23,6 +23,19 @@
                             </p>
 
                             <div class="p-20">
+                                @if(!$errors->isEmpty())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach($errors->all() as $error)
+                                                @if (is_array($error))
+                                                    <li>{{ implode(',', $error) }}</li>
+                                                @else
+                                                    <li>{{ $error }}</li>
+                                                @endif
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <form method="post" action="{{ route('make.store') }}" data-parsley-validate novalidate>
                                     {{ csrf_field() }}
                                     {{ method_field('put') }}

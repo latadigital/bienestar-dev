@@ -39,14 +39,16 @@ $(document).ready(function () {
     $('.colorpicker-rgba').colorpicker();
 
     // Date Picker
-    jQuery('#datepicker').datepicker();
+    jQuery('#datepicker').datepicker({
+        dateFormat: "yyyy/dd/mm"
+    });
     jQuery('#datepicker-autoclose').datepicker({
         autoclose: true,
         todayHighlight: true
     });
     jQuery('#datepicker-inline').datepicker();
     jQuery('#datepicker-multiple-date').datepicker({
-        format: "mm/dd/yyyy",
+        format: "yyyy/dd/mm",
         clearBtn: true,
         multidate: true,
         multidateSeparator: ","

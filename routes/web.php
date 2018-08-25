@@ -30,12 +30,14 @@ Route::get('/blog/{slug}','web\BlogController@post')->name('post');
 
 // HEAD
 Route::get('/categorias/{slug}','web\BlogController@category')->name('category');
-
+Route::get('/generate/discount/{id}', 'PdfCouponController@index')->name('pdf.show');
+Route::get('/download/discount/{id}', 'PdfCouponController@download')->name('pdf.download');
+Route::get('/print/discount/{id}', 'PdfCouponController@print')->name('pdf.print');
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/', 'Admin\AdminController@index')->name('admin.index');
     Route::resource('/users', 'Admin\UsersController');
     Route::resource('/blog', 'Admin\BlogController');
     Route::resource('/make', 'Admin\MakeController');
-    Route::resource('/discount', 'Admin\MakeController');
+    Route::resource('/discount', 'Admin\DiscountController');
 });

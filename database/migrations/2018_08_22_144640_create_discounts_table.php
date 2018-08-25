@@ -23,8 +23,8 @@ class CreateDiscountsTable extends Migration
             $table->string('code1');
             $table->string('code2');
             $table->string('code3');
-            $table->timestamp('from_date')->nullable();
-            $table->timestamp('to_date')->nullable();
+            $table->date('from_date')->nullable();
+            $table->date('to_date')->nullable();
             $table->boolean('state')->default(1);
             $table->timestamps();
 

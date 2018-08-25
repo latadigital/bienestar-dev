@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateDiscountRequest extends FormRequest
+class UpdateDiscountRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -29,9 +29,9 @@ class CreateDiscountRequest extends FormRequest
             'make_id' => 'required',
             'code' => 'required',
             'discount' => 'required',
-            'file1' => 'required|max:1000|image',
-            'file2' => 'required|max:1000|image',
-            'file3' => 'required|max:1000|image',
+            'file1' => 'max:1000|image',
+            'file2' => 'max:1000|image',
+            'file3' => 'max:1000|image',
             'from_date' => 'required',
             'to_date' => 'required',
             'state' => 'required',
@@ -50,18 +50,14 @@ class CreateDiscountRequest extends FormRequest
             'to_date.required' => 'La fecha hasta es requerida',
             'state.required' => 'El estado es requerido',
 
-            'file1.required' => 'El código 1 es requerido',
             'file1.image' => 'El código 1 debe ser una imagen',
             'file1.max' => 'El peso de código 1 debe ser :max',
 
-            'file2.required' => 'El código 2 es requerido',
             'file2.image' => 'El código 2 debe ser una imagen',
             'file2.max' => 'El peso de código 2 debe ser :max',
 
-            'file3.required' => 'El código 3 es requerido',
             'file3.image' => 'El código 3 debe ser una imagen',
             'file3.max' => 'El peso de código 3 debe ser :max',
-
         ];
     }
 }

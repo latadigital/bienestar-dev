@@ -47,17 +47,6 @@ class MakeController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Make  $make
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Make $make)
-    {
-        //
-    }
-
-    /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Make  $make
@@ -89,11 +78,14 @@ class MakeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Make  $make
+     * @param  \App\Make $make
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(Make $make)
     {
-        //
+        $make->delete();
+
+        return redirect()->route('discount.index');
     }
 }

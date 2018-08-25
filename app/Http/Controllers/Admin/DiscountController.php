@@ -5,8 +5,12 @@ namespace App\Http\Controllers\Admin;
 use App\Discount;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CreateDiscountRequest;
+use App\Http\Requests\UpdateDiscountRequest;
 use App\Make;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use function Sodium\compare;
 
 class DiscountController extends Controller
 {
@@ -42,13 +46,13 @@ class DiscountController extends Controller
      */
     public function store(CreateDiscountRequest $request)
     {
-        $code1 = $request->file('code1')->storePublicly('public/discount');
-        $code2 = $request->file('code2')->storePublicly('public/discount');
-        $code3 = $request->file('code3')->storePublicly('public/discount');
+        $code1 = explode('/', $request->file('file1')->store('public/discount'));
+        $code2 = explode('/', $request->file('file2')->store('public/discount'));
+        $code3 = explode('/', $request->file('file3')->store('public/discount'));
 
-        $request['code1'] = $code1;
-        $request['code2'] = $code2;
-        $request['code3'] = $code3;
+        $request['code1'] = "/storage/discount/{$code1[2]}";
+        $request['code2'] = "/storage/discount/{$code2[2]}";
+        $request['code3'] = "/storage/discount/{$code3[2]}";
 
         Discount::create($request->all());
 
@@ -63,7 +67,9 @@ class DiscountController extends Controller
      */
     public function show(Discount $discount)
     {
-        //
+        $discount->make;
+
+        return view('admin.discounts.show', compact('discount'));
     }
 
     /**
@@ -74,29 +80,49 @@ class DiscountController extends Controller
      */
     public function edit(Discount $discount)
     {
-        //
+        $makes = Make::all();
+
+        return view('admin.discounts.update', compact('discount', 'makes'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Discount  $discount
-     * @return \Illuminate\Http\Response
+     * @param UpdateDiscountRequest $request
+     * @param  \App\Discount $discount
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Discount $discount)
+    public function update(UpdateDiscountRequest $request, Discount $discount)
     {
-        //
+        if ($request->hasFile(['file1']) && $request->hasFile(['file2']) &&
+            $request->hasFile(['file3'])) {
+            Storage::delete([$discount->code1, $discount->code2, $discount->code3]);
+
+            $code1 = explode('/', $request->file('file1')->store('public/discount'));
+            $code2 = explode('/', $request->file('file2')->store('public/discount'));
+            $code3 = explode('/', $request->file('file3')->store('public/discount'));
+
+            $request['code1'] = "/storage/discount/{$code1[2]}";
+            $request['code2'] = "/storage/discount/{$code2[2]}";
+            $request['code3'] = "/storage/discount/{$code3[2]}";
+        }
+
+        $discount->update($request->all());
+
+        return redirect()->route('discount.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Discount  $discount
+     * @param  \App\Discount $discount
      * @return \Illuminate\Http\Response
+     * @throws \Exception
      */
     public function destroy(Discount $discount)
     {
-        //
+        $discount->delete();
+
+        return redirect()->route('discount.index');
     }
 }

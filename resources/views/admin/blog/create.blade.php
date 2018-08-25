@@ -21,30 +21,34 @@
                                 En este módulo puedes crear una entrada al blog.
                             </p>
                             <div class="p-20">
+                                @if(!$errors->isEmpty())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach($errors->all() as $error)
+                                                @if (is_array($error))
+                                                    <li>{{ implode(',', $error) }}</li>
+                                                @else
+                                                    <li>{{ $error }}</li>
+                                                @endif
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <form action="{{ route('blog.store') }}" method="post" @if($errors->any())class="was-validated" @endif enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                     <div class="form-group">
                                         <label>Titulo<span class="text-danger">*</span></label>
                                         <input type="text" name="name" required placeholder="Escribe un titulo" class="form-control">
-                                        <div class="invalid-feedback">
-                                            {{ implode(', ', $errors->get('name')) }}
-                                        </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label>Slug<span class="text-danger">*</span></label>
                                         <input type="text" name="slug" required placeholder="slug" class="form-control">
-                                        <div class="invalid-feedback">
-                                            {{ implode(', ', $errors->get('slug')) }}
-                                        </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label>Body<span class="text-danger">*</span></label>
                                         <textarea name="body" id="" cols="30" rows="10" class="textedit'"></textarea>
-                                        <div class="invalid-feedback">
-                                            {{ implode(', ', $errors->get('body')) }}
-                                        </div>
                                     </div>
 
                                     <div class="form-group">
@@ -74,24 +78,18 @@
                                     <div class="form-group">
                                         <label>Extracto<span class="text-danger">*</span></label>
                                         <input type="text" name="excerpt" required placeholder="Escribe un Extracto" class="form-control">
-                                        <div class="invalid-feedback">
-                                            {{ implode(', ', $errors->get('excerpt')) }}
-                                        </div>
                                     </div>
 
                                     <div class="form-group">
                                         <div class="card-box">
                                             <h4 class="header-title m-t-0 m-b-30">Imagen Destacada</h4>
                                             <input type="file" name="image" class="dropify" data-max-file-size="1M" />
-                                            <div class="invalid-feedback">
-                                                {{ implode(', ', $errors->get('file')) }}
-                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <div class="checkbox checkbox-custom">
-                                            <input id="destacado" name="" type="checkbox">
+                                            <input id="destacado" name="primary" type="checkbox">
                                             <label for="destacado">
                                                 Destacado
                                             </label>

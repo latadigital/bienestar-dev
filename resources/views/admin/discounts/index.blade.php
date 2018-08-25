@@ -41,56 +41,23 @@
                                 <th>Acciones</th>
                             </tr>
                             </thead>
-
                             <tbody>
+                            @foreach($discounts as $discount)
                             <tr>
-                                <td>1</td>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>Inactivo</td>
+                                <td>{{ $discount->id }}</td>
+                                <td>{{ $discount->name }}</td>
+                                <td>{{ $discount->presentation }}</td>
+                                <td>{{ $discount->discount }}</td>
+                                <td>{{ ($discount->state)? 'Activo' : 'Inactivo' }}</td>
                                 <td>
-                                    <a href="ver-descuento.php" class="btn waves-effect edit-btn btn-primary"> <i class="fa fa-eye"></i> </a>
-                                    <a href="editar-descuento.php" class="btn waves-effect edit-btn waves-light btn-warning"> <i class="fa fa-pencil"></i> </a>
+                                    <a href="{{ route('discount.show', $discount->id) }}" class="btn waves-effect
+                                    edit-btn btn-primary"> <i class="fa fa-eye"></i> </a>
+                                    <a href="{{ route('discount.edit', $discount->id) }}" class="btn waves-effect
+                                    edit-btn waves-light btn-warning"> <i class="fa fa-pencil"></i> </a>
                                     <a class="btn waves-effect edit-btn btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href=""> <i class="fa fa-close"></i> </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>Estado</td>
-                                <td>
-                                    <a href="ver-descuento.php" class="btn waves-effect edit-btn btn-primary"> <i class="fa fa-eye"></i> </a>
-                                    <a href="editar-descuento.php" class="btn waves-effect edit-btn waves-light btn-warning"> <i class="fa fa-pencil"></i> </a>
-                                    <a class="btn waves-effect edit-btn btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href=""> <i class="fa fa-close"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>Activo</td>
-                                <td>
-                                    <a href="ver-descuento.php" class="btn waves-effect edit-btn btn-primary"> <i class="fa fa-eye"></i> </a>
-                                    <a href="editar-descuento.php" class="btn waves-effect edit-btn waves-light btn-warning"> <i class="fa fa-pencil"></i> </a>
-                                    <a class="btn waves-effect edit-btn btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href=""> <i class="fa fa-close"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Cedric Kelly</td>
-                                <td>Senior Javascript Developer</td>
-                                <td>Edinburgh</td>
-                                <td>Activo</td>
-                                <td>
-                                    <a href="ver-descuento.php" class="btn waves-effect edit-btn btn-primary"> <i class="fa fa-eye"></i> </a>
-                                    <a href="editar-descuento.php" class="btn waves-effect edit-btn waves-light btn-warning"> <i class="fa fa-pencil"></i> </a>
-                                    <a class="btn waves-effect edit-btn btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href=""> <i class="fa fa-close"></i> </a>
-                                </td>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

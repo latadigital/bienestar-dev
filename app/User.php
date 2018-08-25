@@ -42,6 +42,7 @@ class User extends Authenticatable
         //Evento cuando se este guardando
         self::creating(function($user) {
             $user->is_admin = true;
+            $user->password = bcrypt($user->password);
         });
     }
 

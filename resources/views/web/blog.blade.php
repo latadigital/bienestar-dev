@@ -120,7 +120,9 @@
 					$.get('/api/posts-category/'+ category +'/' + this.count, this.loadMore);
 				},
 				loadMore: function (response) {
-					this.posts = response.data
+					for(let i in response) {
+					    this.posts.push(response[i]);
+					}
                 }
 			}
         });

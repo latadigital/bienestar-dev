@@ -8,6 +8,7 @@ use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use App\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -44,8 +45,6 @@ class BlogController extends Controller
     public function store(CreatePostRequest $request)
     {
         $request['file'] = $request->file('image')->storePublicly('public/post');
-        $request['status'] = ($request['status'] === 'on')? true:false;
-        $request['user_id'] = 1;
 
         $post = Post::create($request->all());
         $post->categories()->attach($request->get('categories'));
@@ -84,14 +83,20 @@ class BlogController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param UpdatePostRequest $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(UpdatePostRequest $request, $id)
     {
-        $request['status'] = ($request['status'] === 'on')? true:false;
         $post = Post::findOrFail($id);
+
+        if ($request->hasFile('file')) {
+            Storage::delete($post->code1);
+            $file = $request->file('file1')->store('public/discount');
+            $request['file'] = $file;
+        }
+
         $post->update($request->all());
         $post->categories()->sync($request->get('categories'));
 
@@ -106,6 +111,8 @@ class BlogController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Post::findOrFail($id)->delete();
+
+        return redirect()->route('blog.index');
     }
 }
