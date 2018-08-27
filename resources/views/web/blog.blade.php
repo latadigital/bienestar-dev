@@ -104,7 +104,6 @@
 @endsection
 
 @section('js')
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script>
 		let category = "{{ $category->id }}";
         const app = new Vue({

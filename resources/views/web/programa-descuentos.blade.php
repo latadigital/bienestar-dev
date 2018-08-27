@@ -206,7 +206,6 @@
 
 @section('js')
 	<script src="{{ asset('assets/plugins/moment/min/moment-with-locales.min.js') }}"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script>
 		const app = new Vue({
 			el: "#discount",

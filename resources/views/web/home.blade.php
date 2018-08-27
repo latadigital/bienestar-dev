@@ -221,15 +221,14 @@
 							<p>Recibirá semanalmente artículos relevantes y recomendaciones para cuidar su salud.</p>
 						</div>
 						<div class="c-newsletter__form">
-							<form action="#">
+							<form>
 								<div class="icon"><i class="icon-Correo"></i></div>
 								<div class="input email">
-									<input type="text" placeholder="email@ejemplo.cl">
+									<input id="emailUser" type="text" placeholder="email@ejemplo.cl">
 								</div>
 								<div class="input submit">
 									<a class="btnSuscribirse">Enviar</a>
 								</div>
-								
 							</form>
 						</div>
 						<div class="clearfix"></div>

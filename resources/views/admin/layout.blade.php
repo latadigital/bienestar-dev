@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,9 +76,14 @@
                             <h5 class="text-overflow"><small>Bienvenido ! John</small> </h5>
                         </div>
 
-                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                        <a href="{{ route('logout') }}" class="dropdown-item notify-item" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
                             <i class="zmdi zmdi-power"></i> <span>Logout</span>
                         </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
 
                     </div>
                 </li>
@@ -137,8 +141,7 @@
                     <li class="has_sub">
                         <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-assignment-account"></i> <span> Suscripciones</span> <span class="menu-arrow"></span></a>
                         <ul class="list-unstyled">
-                            <li><a href="listar-habitaciones.php">Listar</a></li>
-                            <li><a href="agregar-habitaciones.php">Agregar</a></li>
+                            <li><a href="{{ route('subscribes.index') }}">Listar</a></li>
                         </ul>
                     </li>
                 </ul>

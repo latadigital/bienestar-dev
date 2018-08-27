@@ -35,9 +35,15 @@ Route::get('/download/discount/{id}', 'PdfCouponController@download')->name('pdf
 Route::get('/print/discount/{id}', 'PdfCouponController@print')->name('pdf.print');
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('/', 'Admin\AdminController@index')->name('admin.index');
-    Route::resource('/users', 'Admin\UsersController');
-    Route::resource('/blog', 'Admin\BlogController');
-    Route::resource('/make', 'Admin\MakeController');
-    Route::resource('/discount', 'Admin\DiscountController');
+    Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+    Route::post('/login', 'Auth\LoginController@login');
+    Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+    Route::group(['middleware' => ['auth', 'role']], function () {
+        Route::get('/', 'Admin\AdminController@index')->name('admin.index');
+        Route::resource('/users', 'Admin\UsersController');
+        Route::resource('/blog', 'Admin\BlogController');
+        Route::resource('/make', 'Admin\MakeController');
+        Route::resource('/discount', 'Admin\DiscountController');
+        Route::resource('/subscribes', 'Admin\SubscribeController');
+    });
 });

@@ -22,46 +22,41 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="page-title-box">
-                        <h4 class="page-title float-left">Descuentos</h4>
+                        <h4 class="page-title float-left">Suscritos</h4>
                         <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
             <!-- end row -->
 
+
             <div class="row">
                 <div class="col-12">
                     <div class="card-box table-responsive">
-                        <h4 class="m-t-0 header-title">Listado de Descuentos</h4>
+                        <h4 class="m-t-0 header-title">Listado de Suscritos</h4>
                         <p class="text-muted font-14 m-b-30">
-                            En este módulo se muestran los Descuentos registrados. Puedes Editar, Eliminar u observar casa registro.
+
                         </p>
 
                         <table id="datatable-buttons" class="table table-striped table-bordered" cellspacing="0" width="100%">
                             <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Nombre</th>
-                                <th>Presentación</th>
-                                <th>Descuento</th>
-                                <th>Estado</th>
+                                <th>Email</th>
+                                <th>Categorias</th>
                                 <th>Acciones</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($discounts as $discount)
+                            @foreach($subscribes as $subscribe)
                             <tr>
-                                <td>{{ $discount->id }}</td>
-                                <td>{{ $discount->name }}</td>
-                                <td>{{ $discount->presentation }}</td>
-                                <td>{{ $discount->discount }}</td>
-                                <td>{{ ($discount->state)? 'Activo' : 'Inactivo' }}</td>
+                                <td>{{ $subscribe->id }}</td>
+                                <td>{{ $subscribe->email }}</td>
+                                <td>{{
+                                    implode(', ', $subscribe->categories->pluck('name')->toArray())
+                                 }}</td>
                                 <td>
-                                    <a href="{{ route('discount.show', $discount->id) }}" class="btn waves-effect
-                                    edit-btn btn-primary"> <i class="fa fa-eye"></i> </a>
-                                    <a href="{{ route('discount.edit', $discount->id) }}" class="btn waves-effect
-                                    edit-btn waves-light btn-warning"> <i class="fa fa-pencil"></i> </a>
-                                    <a class="btn waves-effect edit-btn btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href=""> <i class="fa fa-close"></i> </a>
+
                                 </td>
                             </tr>
                             @endforeach
@@ -72,7 +67,7 @@
             </div>
             <!-- end row -->
         </div> <!-- container -->
-    </div> <!-- content -->
+    </div>
 @endsection
 
 @section('js')

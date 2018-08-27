@@ -19,70 +19,37 @@
 
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+		<style>
+			.c-blog__articles{
+				visibility: visible !important;
+			}
+		</style>
 	</head>
 
 	<div class="modal" id="myModal">
 		<div class="modal-content"><span class="close">&times;</span>
-			<form action="" id="" method="POST" autocomplete="off">
+			<form>
 				<h1 class="c-info__h1 u-mb40"><span>Importante</span></h1>
 				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus mauris nibh, quam hac in phasellus nisi suspendisse potenti gravida eu, mus dui porttitor aenean quisque accumsan nec aptent malesuada.</p>
 				<div class="form-group">
 					<label for="">
-						<input type="checkbox"> He Le&iacute;do y acepto los t&eacute;rminos y condiciones
+						<input v-model="accepted" type="checkbox"> He Le&iacute;do y acepto los t&eacute;rminos y condiciones
 					</label>
 				</div>
 				<div class="form-group">
 					<h2>Elija la Informaci&oacute;n de preferencia</h2>
 				</div>
 				<div class="form-group">
+					@foreach (\App\Category::all() as $category)
 					<div class="group-check">
 						<label for="">
-							<input type="checkbox"> Infantil
+							<input v-model="categories" type="checkbox" value="{{ $category->id }}"> {{ $category->name }}
 						</label>
 					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
-					<div class="group-check">
-						<label for="">
-							<input type="checkbox"> Infantil
-						</label>
-					</div>
+					@endforeach
 				</div>
 				<div class="form-group-full">
-					<a class="btnSuscribirse" href="javascript:void(0)">Suscribirse</a>
+					<a class="btnSuscribirse" @click="send" href="javascript:void(0)">Suscribirse</a>
 				</div>
 			</form>
 		</div>
@@ -149,8 +116,11 @@
 
 			
         @yield('content')
+			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 			@yield('js')
+			<script>
+			</script>
 			<script src="/assets_web/js/libs/bundle.js"></script>
 			<!--<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>-->
 			<!-- inject:js-->
@@ -162,7 +132,46 @@
 			<script src="/assets_web/js/map.js"></script>
 			<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 			<script src="/assets_web/js/main.min.js"></script>
+			<script>
+				let email;
+				$(".btnSuscribirse").click(function () {
+				    let input = $(this).parent().parent().find("#emailUser");
+				    email = $(input);
+				});
 
+                const app = new Vue({
+                    el: "#myModal",
+                    data() {
+                        return {
+                            email: null,
+                            categories: [],
+                            accepted: false
+                        }
+                    },
+                    methods: {
+                        send: function (e) {
+                            let self = this;
+                            this.email = email.val();
+                            if (this.accepted) {
+                                $(e.toElement).text('Enviando ...');
+                                $.post('/api/subscribes', {
+                                    email: this.email,
+                                    categories: this.categories
+                                }, function (){
+                                    self.categories = [];
+                                    self.accepted = false;
+                                    $(e.toElement).text('Gracias por suscribirse!');
+									email.val("");
+                                }).fail(function () {
+                                    $(e.toElement).text('SUSCRIBIRSE');
+								});
+                            } else {
+								alert('Debe aceptar los terminos y condiciones');
+							}
+                        }
+                    }
+                });
+			</script>
 
 			<div class="c-footerLocation">
 				<div class="c-footerLocation__inner">
@@ -202,9 +211,9 @@
 						<div class="c-footer__box">
 							<h2>Suscríbase a nuestros Temas de interés</h2>
 							<p>Recibirá semanalmente artículos <br /> relevantes y recomendaciones para cuidar su salud.</p>
-							<form action="#">
+							<form id="submitSuscribirse">
 								<div class="input email">
-									<input type="text" placeholder="Email">
+									<input type="text" class="emailSuscribirse" placeholder="Email">
 								</div>
 								<div class="input submit">
 									<input type="submit" value="">
