@@ -12,9 +12,9 @@ class MakePresentationController extends Controller
     public function index($make)
     {
         $presents = Discount::query()
-            ->select(['presentation', 'id'])
             ->where('make_id', $make)
             ->where('state', 1)
+            ->with('make')
             ->get();
 
         return response()->json($presents);

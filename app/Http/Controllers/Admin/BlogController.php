@@ -44,7 +44,7 @@ class BlogController extends Controller
      */
     public function store(CreatePostRequest $request)
     {
-        $request['file'] = $request->file('image')->storePublicly('public/post');
+        $request['file'] = $request->file('image')->store('public/post');
 
         $post = Post::create($request->all());
         $post->categories()->attach($request->get('categories'));
@@ -93,7 +93,7 @@ class BlogController extends Controller
 
         if ($request->hasFile('file')) {
             Storage::delete($post->code1);
-            $file = $request->file('file1')->store('public/discount');
+            $file = $request->file('file1')->store('public/post');
             $request['file'] = $file;
         }
 
