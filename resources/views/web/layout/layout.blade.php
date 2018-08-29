@@ -20,11 +20,19 @@
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 
+<<<<<<< HEAD
 		<!--<style>
 			.c-blog__articles{
 				visibility: visible !important;
 			}
 		</style>-->
+=======
+		<style>
+			.c-blog__articles{
+				visibility: visible !important;
+			}
+		</style>
+>>>>>>> 40b23e97d91ee6f4d887a6bac308cbe2894bc436
 
 	</head>
 
@@ -89,28 +97,29 @@
 					</div>
 				</div>
 				<div class="c-header__nav"><a class="btnSaval" href="https://www.savalcorp.com/es/" target="_blank"><img src="/assets_web/img/logo-saval-footer.png"></a>
+<<<<<<< HEAD
 					<div class="c-brand-bienestar"><a href="/" title="Enlace a Bienestar"><img src="/assets_web/img/bienestar-hor.svg"></a></div>
+=======
+					<div class="c-brand-bienestar"><img src="/assets_web/img/bienestar-hor.svg"></div>
+>>>>>>> 40b23e97d91ee6f4d887a6bac308cbe2894bc436
 					<div class="c-inner">
 						<nav>
 							<ul>
 								<li><a href="/">Home</a></li>
 								<li><a href="/somos">Quiénes somos</a></li>
 								<li><a href="/programa-descuentos">Programa de descuento</a></li>
-								<li><a href="/categorias/infantil">Temas de interés</a></li>
+								<li><a href="/temas-de-interes">Temas de interés</a></li>
 								<li><a href="/contacto">Contacto																								</a></li>
 							</ul>
 						</nav>
-						<div class="c-header__nav-mobile"><a class="c-header__mobile-open" href="#"><span class="fas fa-bars"></span><i>Menú</i></a><a class="c-header__mobile-account" href="#" style="display:none;"><span class="fas fa-user-circle"></span><i>Mi cuenta						</i></a>
+						<div class="c-header__nav-mobile"><a class="c-header__mobile-open" href="#"><span class="fas fa-bars"></span><i>Menu</i></a><a class="c-header__mobile-account" href="#" style="display:none;"><span class="fas fa-user-circle"></span><i>Mi cuenta						</i></a>
 							<!--a.c-header__mobile-search(href="#")
 							span.icon-Lupa-02
 							i ¿Qué buscas?									
 							-->
 						</div>
-						<div class="c-header__brand c-header__brand--mobile">
-							<a href="/" title="Enlace a Bienestar">
-								<img src="/assets_web/img/header-logo-v2.png" alt="Laboratorios Saval">
-							</a>
-						</div>
+						<div class="c-header__brand c-header__brand--mobile"><img src="/assets_web/img/header-logo-v2.png" alt="Laboratorios Saval"></div>
+
 					</div>
 				</div>
 			</header>

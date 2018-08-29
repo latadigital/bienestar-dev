@@ -23,7 +23,7 @@ Route::get('/', function () {
     return view('web/home', compact('posts'));
 });
 
-Route::get('/blog', 'web\BlogController@index')->name('blog');
+Route::get('/temas-de-interes/', 'web\BlogController@index')->name('interes');
 Route::get('/contacto', 'web\ContactoController@index')->name('contacto');
 Route::post('/contacto', 'web\ContactoController@store')->name('contacto.store');
 Route::get('/somos', 'web\SomosController@index')->name('Somos');
