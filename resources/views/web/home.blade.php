@@ -165,7 +165,20 @@
 							<div class="c-homeBlog__article-info">
 								<h2>{{ $post->title }}</h2><span>{{ $post->created_at->format('M D, Y') }} por Camila en temas de salud</span>
 								<p>{{ str_limit($post->excerpt, 20) }} [...]</p><a href="{{ route('post', $post->slug) }}"><span>+ </span>Leer más</a>
-								<div class="c-homeBlog__article-socials"><a href="#"><span class="fab fa-facebook-f"></span></a><a href="#"><span class="fab fa-twitter"></span></a><a href="#"><span class="fab fa-google-plus-g"></span></a><a href="#"><span class="fab fa-linkedin-in"></span></a></div>
+								<div class="c-homeBlog__article-socials">
+									<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ route('post', $post->slug) }}">
+										<span class="fab fa-facebook-f"></span>
+									</a>
+									<a target="_blank" href="http://twitter.com/share?text=Bienestar Saval&url={{ route('post', $post->slug) }}&hashtags=BienestarSaval">
+										<span class="fab fa-twitter"></span>
+									</a>
+									<a href="https://plus.google.com/share?app=110&url={{ route('post', $post->slug) }}" target="_blank">
+										<span class="fab fa-google-plus-g"></span>
+									</a>
+									<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ route('post', $post->slug) }}&summary={{ $post->excerpt }}&source=LinkedIn">
+										<span class="fab fa-linkedin-in">  </span>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>

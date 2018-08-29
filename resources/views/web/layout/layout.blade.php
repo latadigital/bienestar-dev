@@ -20,11 +20,11 @@
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 
-		<!--<style>
+		<style>
 			.c-blog__articles{
 				visibility: visible !important;
 			}
-		</style>-->
+		</style>
 
 	</head>
 
