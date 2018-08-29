@@ -8,7 +8,7 @@
 </head>
 <body>
     <div style="text-align: center">
-        <img src="http://localhost:8000/storage/discount/eH6HjoRCaiolCnItItiVxvxIV94twwnQ0TK3Malb.png" alt="">
+        <img src="http://localhost:8000/assets_web/img/2-S-L.png" alt="">
     </div>
 </body>
 </html>

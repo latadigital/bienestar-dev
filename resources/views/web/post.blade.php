@@ -2,7 +2,7 @@
 
 @section('content')        
     
-           <!-- <main role="main">
+           <main role="main">
 				<div class="c-single">
 					<div class="c-inner">
 						<div class="c-single__content">
@@ -35,7 +35,7 @@
 
                             <h2>Categorias</h2>
 							<div class="c-single__cats">	
-								@foreach($post->categories as $category)
+								@foreach (\App\Category::all() as $category)
 								<div class="c-single__cat"><a href="{{ route('category', $category->slug) }}">{{ $category->name }}</a>
 									<div class="count">(15)</div>
                                 </div>
@@ -62,15 +62,18 @@
 								</div>
 
 							</div>
+							<div class="c-single__recents">
+								<img src="/assets_web/img/2-S-L.png" alt="" width="90%" style="margin: 40px auto;">
+							</div>
 							
 						</div>
 					</div>
 				</div>
-            </main>-->
+            </main>
 
 
 
-			<main role="main">
+			<!--<main role="main">
 				<div class="c-single">
 					<div class="c-inner">
 						<div class="c-single__content">
@@ -209,6 +212,6 @@
 						</div>
 					</div>
 				</div>
-			</main>
+			</main>-->
 
 @stop

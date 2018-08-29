@@ -22,6 +22,7 @@ class CreatePostsTable extends Migration
             $table->mediumText('excerpt')->nullable;
             $table->text('body');
             $table->enum('status', ['PUBLISHED', 'DRAFT'])->default('DRAFT');
+            $table->boolean('primary')->default(0);
             $table->string('file', 128)->nullable();
             $table->timestamps();
 

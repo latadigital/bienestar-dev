@@ -15,3 +15,4 @@
 Route::get('/posts-category/{id}/{count}', 'Api\PostController@index');
 Route::get('/make/{make}/presentation', 'Api\MakePresentationController@index');
 Route::get('/make/{id}/discount/{discount}', 'Api\MakeDiscountController@show');
+Route::post('/subscribes', 'Api\SubscribeController@store');

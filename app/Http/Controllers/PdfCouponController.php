@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Discount;
+use App\PDF;
 
 class PdfCouponController extends Controller
 {
@@ -10,13 +11,14 @@ class PdfCouponController extends Controller
     {
         $discount = Discount::findOrFail($discount);
 
-        $pdf = new \TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+        $pdf = new PDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
         $pdf->SetAuthor('Cupones');
         $pdf->SetTitle('Cupones');
         $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
         $pdf->AddPage();
+
 
         $imgdata1 = file_get_contents(trim($discount->code1, '/'));
         $pdf->Image('@'.$imgdata1, 60);
