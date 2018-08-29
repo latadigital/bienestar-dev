@@ -19,11 +19,19 @@
 
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+<<<<<<< HEAD
 		<!--<style>
 			.c-blog__articles{
 				visibility: visible !important;
 			}
 		</style>-->
+=======
+		<style>
+			.c-blog__articles{
+				visibility: visible !important;
+			}
+		</style>
+>>>>>>> 4c39e06b9614a13d3ee8d0d3568e536f3b14ab1d
 	</head>
 
 	<div class="modal" id="myModal">
@@ -216,10 +224,10 @@
 						</div>
 						<div class="c-footer__box">
 							<h2>Suscríbase a nuestros Temas de interés</h2>
-							<p>Recibirá semanalmente artículos relevantes y recomendaciones para cuidar su salud.</p>
-							<form action="#">
+							<p>Recibirá semanalmente artículos <br /> relevantes y recomendaciones para cuidar su salud.</p>
+							<form id="submitSuscribirse">
 								<div class="input email">
-									<input type="text" id="emailUser" placeholder="Email">
+									<input type="text" class="emailSuscribirse" placeholder="Email">
 								</div>
 								<div class="input submit">
 									<a class="btnSuscribirse" href="javascript:void(0)"></a>

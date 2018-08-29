@@ -138,7 +138,7 @@
 							<form>
 								<div class="icon"><i class="icon-Correo"></i></div>
 								<div class="input email">
-									<input id="emailUser" type="text" placeholder="email@ejemplo.cl" required>
+									<input id="emailUser" type="text" placeholder="email@ejemplo.cl">
 								</div>
 								<div class="input submit">
 									<a class="btnSuscribirse">Enviar</a>
