@@ -19,19 +19,13 @@
 
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
-<<<<<<< HEAD
+
 		<!--<style>
 			.c-blog__articles{
 				visibility: visible !important;
 			}
 		</style>-->
-=======
-		<style>
-			.c-blog__articles{
-				visibility: visible !important;
-			}
-		</style>
->>>>>>> 4c39e06b9614a13d3ee8d0d3568e536f3b14ab1d
+
 	</head>
 
 	<div class="modal" id="myModal">
