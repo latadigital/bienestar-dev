@@ -50,7 +50,6 @@
 								<h2>{{ $post->name }} </h2>
 								<p>{{ str_limit($post->excerpt, 20) }} [...]</p>
 								<a href="{{ route('post', $post->slug) }}"><span>+ </span>Leer más</a>
-								{{ $post->id }}
 								<div class="c-blog__article-socials">
 									<a href="#">
 										<span class="fab fa-facebook-f"></span>
