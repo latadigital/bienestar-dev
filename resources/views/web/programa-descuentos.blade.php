@@ -89,11 +89,7 @@
 						</form>
 					</div>
 				</div>
-<<<<<<< HEAD
 				<div class="c-buscadorResultados" id="scrollBuscador" tabindex="1">
-=======
-				<div class="c-buscadorResultados" id="resultadosDescuentos" tabindex="1">
->>>>>>> 40b23e97d91ee6f4d887a6bac308cbe2894bc436
 					<div class="c-inner">
 						<h1>Resultados<span>Buscador de descuentos en medicamentos</span></h1>
 						<p class="legal">Este cupón es válido para acceder al beneficio del Programa de Descuento en Medicamentos de Laboratorios Saval, sólo si lo presenta en las farmacias adheridas junto con su receta médica.</p>
@@ -187,22 +183,15 @@
 							<img src="/assets_web/img/logo-cupon.png">
 							<div class="c-modalMobile__text">
 								<p>Descuento válido del @{{ result.from | dateString }} al @{{ result.to | dateString
-<<<<<<< HEAD
 									}}, ambas fechas inclusive. Consulte por la disponibilidad de los productos en Farmacias Ahumada, Farmacias Salco Brand, Farmacias Cruz Verde, y en todas las farmacias adheridas a este programa. No acumulables a otras promociones y/o convenios.</p>
 								<p>NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por su médico. Consulte siempre el uso de medicamentos con su médico o químico farmacéutico. Dispensación de medicamentos se realizará conforme condición de venta según normativa vigente.</p>
-=======
-									}}, ambas fechas inclusive. Consulte por la disponibilidad de los productos en Farmacias Ahumada, Farmacias Salco Brand, Farmacias Cruz Verde,  y en todas las farmacias adheridas a este programa. No acumulables a otras promociones, ofertas y/o convenios. NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por su médico. Consulte siempre el uso de medicamentos con su médico o químico.</p>
->>>>>>> 40b23e97d91ee6f4d887a6bac308cbe2894bc436
+
 							</div>
 							<div class="c-modalMobile__valido">
 								<p>Programa válido del: @{{ result.from | dateDay }} al @{{ result.to | dateDay }}</p>
 							</div>
 							<div class="c-modalMobile__input-agree">
-<<<<<<< HEAD
 								<input type="checkbox"><a href="/terminos-de-uso" target="_blank" title="Enlace a términos y condiciones de uso">He leído y aceptado los términos y condiciones</a>
-=======
-								<input type="checkbox"><a href="" target="_blank" title="">He leído y aceptado los términos y condiciones</a>
->>>>>>> 40b23e97d91ee6f4d887a6bac308cbe2894bc436
 							</div><a class="c-modalMobile__btn" href="#">Obtener cupón</a>
 						</div>
 						<div class="c-modalMobile__secondStep">

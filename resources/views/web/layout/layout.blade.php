@@ -20,20 +20,11 @@
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
 
-<<<<<<< HEAD
 		<!--<style>
 			.c-blog__articles{
 				visibility: visible !important;
 			}
 		</style>-->
-=======
-		<style>
-			.c-blog__articles{
-				visibility: visible !important;
-			}
-		</style>
->>>>>>> 40b23e97d91ee6f4d887a6bac308cbe2894bc436
-
 	</head>
 
 	<div class="modal" id="myModal">
@@ -97,11 +88,7 @@
 					</div>
 				</div>
 				<div class="c-header__nav"><a class="btnSaval" href="https://www.savalcorp.com/es/" target="_blank"><img src="/assets_web/img/logo-saval-footer.png"></a>
-<<<<<<< HEAD
 					<div class="c-brand-bienestar"><a href="/" title="Enlace a Bienestar"><img src="/assets_web/img/bienestar-hor.svg"></a></div>
-=======
-					<div class="c-brand-bienestar"><img src="/assets_web/img/bienestar-hor.svg"></div>
->>>>>>> 40b23e97d91ee6f4d887a6bac308cbe2894bc436
 					<div class="c-inner">
 						<nav>
 							<ul>
