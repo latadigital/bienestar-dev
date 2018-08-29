@@ -89,7 +89,7 @@
 						</form>
 					</div>
 				</div>
-				<div class="c-buscadorResultados">
+				<div class="c-buscadorResultados" id="resultadosDescuentos" tabindex="1">
 					<div class="c-inner">
 						<h1>Resultados<span>Buscador de descuentos en medicamentos</span></h1>
 						<p class="legal">Este cupón es válido para acceder al beneficio del Programa de Descuento en Medicamentos de Laboratorios Saval, sólo si lo presenta en las farmacias adheridas junto con su receta médica.</p>
@@ -256,6 +256,7 @@
                     let self = this;
 					$.get('/api/make/' + self.make + '/discount/' + self.presentation, function (data) {
 					    self.discount = data;
+					    $("#resultadosDescuentos").focus()
 					});
 				},
 				show: function () {

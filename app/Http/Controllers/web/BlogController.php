@@ -15,9 +15,15 @@ use App\Category;
 class BlogController extends Controller
 {
 
-    function index(){
-        $posts = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
-        return view('web.blog', compact('posts'));
+    function index()
+    {
+        $categories = Category::all();
+        $posts = Post::orderBy('id', 'DESC')->where('status', 'PUBLISHED');
+        if (\request()->has('q')) {
+            $posts->where('name', 'like', '%'.\request()->get('q').'%');
+        }
+        $posts = $posts->get();
+        return view('web.temasInteres', compact('posts', 'categories'));
     }
 
     public function category($slug)

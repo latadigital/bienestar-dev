@@ -20,15 +20,17 @@
                             
                             <div class="c-single__share">
 								<div class="icon"><span class="fas fa-share-alt"></span></div>
-								<p>Comparte:</p><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Behance</a>
+								<p>Comparte:</p>
+								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ route('post', $post->slug) }}">Facebook</a>
+								<a target="_blank" href="http://twitter.com/share?text=Bienestar Saval&url={{ route('post', $post->slug) }}&hashtags=BienestarSaval">Twitter</a>
 								<div class="c-single__pagination"><a href="#"><span class="fas fa-arrow-left"></span><i>Prev</i></a>/<a href="#"><i>Next </i><span class="fas fa-arrow-right"></span></a></div>
 							</div>
 						</div>
 						<div class="c-single__aside">
 							<div class="c-single__search">
-								<form action="#">
+								<form action="{{ route('interes') }}">
 									<div class="input search">
-										<input type="text" placeholder="Buscar">
+										<input name="q" type="text" placeholder="Buscar">
 									</div>
 								</form>
 							</div>
@@ -37,30 +39,22 @@
 							<div class="c-single__cats">	
 								@foreach (\App\Category::all() as $category)
 								<div class="c-single__cat"><a href="{{ route('category', $category->slug) }}">{{ $category->name }}</a>
-									<div class="count">(15)</div>
+									<div class="count">{{ $category->posts->count() }}</div>
                                 </div>
                                 @endforeach
                             </div>
 
 							<h2>Posts recientes</h2>
                             <div class="c-single__recents">
-
-
+								@foreach (\App\Post::take(2)->orderByDesc('created_at')->get() as $post)
 								<div class="c-single__recent">
 									<figure></figure>
 									<div class="info">
 										<h3>{{ $post->name }}</h3>
-										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
+										<p>{{ $post->created_at->format('M d, Y') }}</p>
 									</div>
 								</div>
-								<div class="c-single__recent">
-									<figure></figure>
-									<div class="info">
-										<h3>Dental patients increased to protection</h3>
-										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
-									</div>
-								</div>
-
+								@endforeach
 							</div>
 							<div class="c-single__recents">
 								<img src="/assets_web/img/2-S-L.png" alt="" width="90%" style="margin: 40px auto;">

@@ -71,24 +71,24 @@
 					<div class="c-blog__article" v-for="post in posts">
 						<div class="c-blog__article-inner">
 							<div class="c-blog__article-image">
-								<img src="/assets_web/img/placeholder.jpg" alt="">
+								<img :src="post.file" alt="" v-if="post.file">
+								<img src="/assets_web/img/placeholder.jpg" alt="" v-else>
 							</div>
 							<div class="c-blog__article-info">
-								<h2></h2>
-								<p>[...]</p>
-								<a href=""><span>+ </span>Leer más</a>
-
+								<h2>@{{ post.name }}</h2>
+								<p>@{{ post.excerpt }}[...]</p>
+								<a :href="'blog/' + post.slug"><span>+ </span>Leer más</a>
 								<div class="c-blog__article-socials">
-									<a href="#">
+									<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=">
 										<span class="fab fa-facebook-f"></span>
 									</a>
-									<a href="#">
+									<a target="_blank" href="http://twitter.com/share?text=Bienestar Saval&url=&hashtags=BienestarSaval">
 										<span class="fab fa-twitter"></span>
 									</a>
-									<a href="#">
+									<a href="https://plus.google.com/share?app=110&url=" target="_blank">
 										<span class="fab fa-google-plus-g"></span>
 									</a>
-									<a href="#">
+									<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=&summary={{ $post->excerpt }}&source=LinkedIn">
 										<span class="fab fa-linkedin-in">  </span>
 									</a>
 								</div>

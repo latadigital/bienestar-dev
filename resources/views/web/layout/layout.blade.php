@@ -96,7 +96,7 @@
 								<li><a href="/">Home</a></li>
 								<li><a href="/somos">Quiénes somos</a></li>
 								<li><a href="/programa-descuentos">Programa de descuento</a></li>
-								<li><a href="/categorias/infantil">Temas de interés</a></li>
+								<li><a href="/temas-de-interes">Temas de interés</a></li>
 								<li><a href="/contacto">Contacto																								</a></li>
 							</ul>
 						</nav>
