@@ -15,11 +15,12 @@
 
 //WEB
 Route::get('/', function () {
-    $post = \App\Post::query()
+    \Carbon\Carbon::setLocale('es');
+    $posts = \App\Post::query()
         ->where('primary', 1)
         ->where('status', 1)
         ->get();
-    return view('web/home', compact('post'));
+    return view('web/home', compact('posts'));
 });
 
 Route::get('/blog', 'web\BlogController@index')->name('blog');
