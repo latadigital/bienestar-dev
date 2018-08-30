@@ -119,11 +119,11 @@
 				<div class="c-savaTemas__boxes c-mobile-boxes" id="c-boxes-down">
 					@foreach (\App\Category::all() as $category)
 
-					<div class="c-savaTemas__box">
-						<div class="icon"></div>
-						<figure><img src="{{ $category->icohome }} "></figure><span>{{ $category->name }}</span>
-						<p>{!!  substr(strip_tags($category->body), 0, 195) !!} [...] <a href="{{ route('category', $category->slug) }}"><span>+</span>Ver todos los articulos</a></p>
-					</div>
+						<div class="c-savaTemas__box">
+							<div class="icon"></div>
+							<figure><img src="{{ $category->icohome }} "></figure><span>{{ $category->name }}</span>
+							<p>{!!  substr(strip_tags($category->body), 0, 195) !!} [...] <a href="{{ route('category', $category->slug) }}"><span>+</span>Ver todo {{ $category->name }}</a></p>
+						</div>
 					@endforeach
 				</div>
 			</div>
@@ -153,35 +153,35 @@
 				<h1 class="c-info__h1 u-mb40"><span>Temas destacados</span></h1>
 				<div class="c-homeBlog__articles">
 					@foreach($posts as $post)
-					<div class="c-homeBlog__article">
-						<div class="c-homeBlog__article-inner">
-							<div class="c-homeBlog__article-image">
-								@if($post->file)
-									<img src="{{ $post->file }}" alt="">
-								@else
-									<img src="/assets_web/img/blog-thumb.png">
-								@endif
-							</div>
-							<div class="c-homeBlog__article-info">
-								<h2>{{ $post->title }}</h2><span>{{ $post->created_at->format('M D, Y') }} por Camila en temas de salud</span>
-								<p>{{ str_limit($post->excerpt, 20) }} [...]</p><a href="{{ route('post', $post->slug) }}"><span>+ </span>Leer más</a>
-								<div class="c-homeBlog__article-socials">
-									<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ route('post', $post->slug) }}">
-										<span class="fab fa-facebook-f"></span>
-									</a>
-									<a target="_blank" href="http://twitter.com/share?text=Bienestar Saval&url={{ route('post', $post->slug) }}&hashtags=BienestarSaval">
-										<span class="fab fa-twitter"></span>
-									</a>
-									<a href="https://plus.google.com/share?app=110&url={{ route('post', $post->slug) }}" target="_blank">
-										<span class="fab fa-google-plus-g"></span>
-									</a>
-									<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ route('post', $post->slug) }}&summary={{ $post->excerpt }}&source=LinkedIn">
-										<span class="fab fa-linkedin-in">  </span>
-									</a>
+						<div class="c-homeBlog__article">
+							<div class="c-homeBlog__article-inner">
+								<div class="c-homeBlog__article-image">
+									@if($post->file)
+										<img src="{{ $post->file }}" alt="">
+									@else
+										<img src="/assets_web/img/blog-thumb.png">
+									@endif
+								</div>
+								<div class="c-homeBlog__article-info">
+									<h2>{{ $post->name }}</h2><span>{{ $post->created_at->format('d / m, Y') }} por Camila en temas de salud</span>
+									<p>{{ str_limit($post->excerpt, 20) }} [...]</p><a href="{{ route('post', $post->slug) }}"><span>+ </span>Leer más</a>
+									<div class="c-homeBlog__article-socials">
+										<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ route('post', $post->slug) }}">
+											<span class="fab fa-facebook-f"></span>
+										</a>
+										<a target="_blank" href="http://twitter.com/share?text=Bienestar Saval&url={{ route('post', $post->slug) }}&hashtags=BienestarSaval">
+											<span class="fab fa-twitter"></span>
+										</a>
+										<a href="https://plus.google.com/share?app=110&url={{ route('post', $post->slug) }}" target="_blank">
+											<span class="fab fa-google-plus-g"></span>
+										</a>
+										<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ route('post', $post->slug) }}&summary={{ $post->excerpt }}&source=LinkedIn">
+											<span class="fab fa-linkedin-in">  </span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 					@endforeach
 				</div>
 			</div>

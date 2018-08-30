@@ -95,9 +95,9 @@
                                     <div class="form-group">
                                         <div class="checkbox checkbox-custom">
                                             @if($post->primary)
-                                            <input id="destacado" name="" type="checkbox" checked>
+                                            <input id="destacado" name="primary" type="checkbox" checked>
                                             @else
-                                                <input id="destacado" name="" type="checkbox">
+                                                <input id="destacado" name="primary" type="checkbox">
                                             @endif
                                             <label for="destacado">
                                                 Destacado
