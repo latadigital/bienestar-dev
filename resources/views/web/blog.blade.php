@@ -87,7 +87,7 @@
 									<a href="https://plus.google.com/share?app=110&url=" target="_blank">
 										<span class="fab fa-google-plus-g"></span>
 									</a>
-									<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=&summary={{ $post->excerpt }}&source=LinkedIn">
+									<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=&summary=&source=LinkedIn">
 										<span class="fab fa-linkedin-in">  </span>
 									</a>
 								</div>

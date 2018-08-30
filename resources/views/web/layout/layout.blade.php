@@ -221,7 +221,7 @@
 							<p>Recibirá semanalmente artículos <br /> relevantes y recomendaciones para cuidar su salud.</p>
 							<form id="submitSuscribirse">
 								<div class="input email">
-									<input type="text" class="emailSuscribirse" placeholder="Email">
+									<input type="text" id="emailUser" class="emailSuscribirse" placeholder="Email">
 								</div>
 								<div class="input submit">
 									<a class="btnSuscribirse" href="javascript:void(0)"></a>

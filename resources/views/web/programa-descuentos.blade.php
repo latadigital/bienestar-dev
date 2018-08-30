@@ -79,7 +79,7 @@
 							<div class="select brand">
 								<label for="#">Seleccione presentación</label>
 								<select v-model="presentation" name="">
-									<option value="" selected>Presentación</option>
+									<option value="" selected>Todas</option>
 									<option :value="p.id" v-for="p in presents">@{{ p.presentation }}</option>
 								</select>
 							</div>
@@ -99,7 +99,7 @@
 									<p><strong>@{{ discount.make.name }}</strong>  ® @{{ discount.name }} - @{{ discount
 										.presentation }} </p>
 									<div class="actions"><span>$-@{{ discount.discount }}</span>
-										<a class="buscadorResultados__button" @click="show">Generar
+										<a class="buscadorResultados__button" @click="show(discount)">Generar
 											cupón</a></div>
 								</div>
 							</div>
@@ -259,17 +259,17 @@
 				buscar: function () {
                     let self = this;
 					$.get('/api/make/' + self.make + '/discount/' + self.presentation, function (data) {
-					    self.discount = data;
+					    self.discounts = data;
 					    $("#scrollBuscador").focus();
 					});
 				},
-				show: function () {
-				    this.result.code1 = this.discounts.code1;
-				    this.result.code2 = this.discounts.code2;
-				    this.result.code3 = this.discounts.code3;
-				    this.result.to = this.discounts.to_date;
-				    this.result.from = this.discounts.from_date;
-				    this.result.id = this.discounts.id;
+				show: function (discount) {
+				    this.result.code1 = discount.code1;
+				    this.result.code2 = discount.code2;
+				    this.result.code3 = discount.code3;
+				    this.result.to = discount.to_date;
+				    this.result.from = discount.from_date;
+				    this.result.id = discount.id;
 
                     $(".c-modalCupon").show();
 				}
@@ -292,6 +292,7 @@
 					    self.presents = data.map(function (value) {
 					        return {'id': value.id, 'presentation': value.presentation}
 						});
+					    self.presentation = '';
 					    self.discounts = data;
                         $("#scrollBuscador").focus();
 					})

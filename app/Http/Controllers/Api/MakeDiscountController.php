@@ -15,7 +15,7 @@ class MakeDiscountController extends Controller
             ->where('id', $presentation)
             ->where('state', 1)
             ->with('make')
-            ->firstOrFail();
+            ->get();
 
         return response()->json($presents);
     }

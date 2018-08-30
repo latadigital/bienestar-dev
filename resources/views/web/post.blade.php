@@ -48,7 +48,7 @@
                             <div class="c-single__recents">
 								@foreach (\App\Post::take(2)->orderByDesc('created_at')->get() as $post)
 								<div class="c-single__recent">
-									<figure></figure>
+									<figure style="background: url('{{$post->file}}')"></figure>
 									<div class="info">
 										<h3>{{ $post->name }}</h3>
 										<p>{{ $post->created_at->format('M d, Y') }}</p>
@@ -59,10 +59,6 @@
 							<div class="c-single__recents">
 								<img src="/assets_web/img/2-S-L.png" alt="" width="90%" style="margin: 40px auto;">
 							</div>
-							<div class="c-single__recents">
-								<img src="/assets_web/img/2-S-L.png" alt="" width="90%" style="margin: 40px auto;">
-							</div>
-							
 						</div>
 					</div>
 				</div>
