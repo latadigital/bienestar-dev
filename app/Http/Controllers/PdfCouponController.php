@@ -18,13 +18,12 @@ class PdfCouponController extends Controller
         $pdf->setImageScale(PDF_IMAGE_SCALE_RATIO);
 
         $pdf->AddPage();
-
-
-        $imgdata1 = file_get_contents(trim($discount->code1, '/'));
+        
+        $imgdata1 = file_get_contents(public_path($discount->code1));
         $pdf->Image('@'.$imgdata1, 60);
-        $imgdata2 = file_get_contents(trim($discount->code2, '/'));
+        $imgdata2 = file_get_contents(public_path($discount->code2));
         $pdf->Image('@'.$imgdata2, 60, 100);
-        $imgdata3 = file_get_contents(trim($discount->code3, '/'));
+        $imgdata3 = file_get_contents(public_path($discount->code3));
         $pdf->Image('@'.$imgdata3, 60, 200);
         $pdf->Output('Cupones.pdf', 'I');
     }
@@ -41,11 +40,11 @@ class PdfCouponController extends Controller
 
         $pdf->AddPage();
 
-        $imgdata1 = file_get_contents(trim($discount->code1, '/'));
+        $imgdata1 = file_get_contents(trim($discount->code1));
         $pdf->Image('@'.$imgdata1, 60);
-        $imgdata2 = file_get_contents(trim($discount->code2, '/'));
+        $imgdata2 = file_get_contents(trim($discount->code2));
         $pdf->Image('@'.$imgdata2, 60, 100);
-        $imgdata3 = file_get_contents(trim($discount->code3, '/'));
+        $imgdata3 = file_get_contents(trim($discount->code3));
         $pdf->Image('@'.$imgdata3, 60, 200);
         $pdf->Output('Cupones.pdf', 'D');
     }

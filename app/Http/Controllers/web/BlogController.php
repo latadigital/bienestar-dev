@@ -39,7 +39,8 @@ class BlogController extends Controller
         return view('web.blog', compact('category'));
     }
     
-    public function tag($slug){
+    public function tag($slug)
+    {
         $posts = Post::whereHas('tags', function($query) use ($slug){
             $query->where('slug', $slug);
         })->orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(10);
@@ -47,11 +48,17 @@ class BlogController extends Controller
         return view('web.blog', compact('posts'));
     }
 
-    public function post($slug){
+    public function post($slug)
+    {
         $post = Post::where('slug', $slug)->first();
-        $category = DB::table('categories')->get();
 
-        return view('web.post', compact('post'), ['categories' => $category]);
+        $max = Post::where('id', '<', $post->id)->max('id');
+        $min = Post::where('id', '>', $post->id)->min('id');
+        $prev = Post::find($max);
+        $next = Post::find($min);
+        $categories = DB::table('categories')->get();
+
+        return view('web.post', compact('post', 'categories', 'prev', 'next'));
     }
 
 }

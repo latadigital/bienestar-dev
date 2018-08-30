@@ -19,7 +19,6 @@
 
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
-
 		<!--<style>
 			.c-blog__articles{
 				visibility: visible !important;
@@ -88,7 +87,7 @@
 					</div>
 				</div>
 				<div class="c-header__nav"><a class="btnSaval" href="https://www.savalcorp.com/es/" target="_blank"><img src="/assets_web/img/logo-saval-footer.png"></a>
-					<div class="c-brand-bienestar"><a href="/" title="Enlace a Bienestar"><img src="/assets_web/img/bienestar-hor.svg"></a></div>
+					<div class="c-brand-bienestar"><img src="/assets_web/img/bienestar-hor.svg"></div>
 					<div class="c-inner">
 						<nav>
 							<ul>
@@ -106,7 +105,6 @@
 							-->
 						</div>
 						<div class="c-header__brand c-header__brand--mobile"><img src="/assets_web/img/header-logo-v2.png" alt="Laboratorios Saval"></div>
-
 					</div>
 				</div>
 			</header>
@@ -124,11 +122,10 @@
 
 			
         @yield('content')
+			<script src="{{ asset('assets/plugins/moment/min/moment-with-locales.min.js') }}"></script>
 			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 			@yield('js')
-			<script>
-			</script>
 			<script src="/assets_web/js/libs/bundle.js"></script>
 			<script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
 			<!-- inject:js-->
@@ -202,7 +199,7 @@
 				<div class="c-inner">
 					<div class="c-footer__boxes">
 						<div class="c-footer__box">
-							<figure><a href="/" title="Enlace a Bienestar"><img src="/assets_web/img/footer-logo-v2.png" alt="Saval"></a></figure>
+							<figure><img src="/assets_web/img/footer-logo-v2.png" alt="Saval"></figure>
 							<p>Programa de descuento en <br />medicamentos de Laboratorios SAVAL.</p>
 						</div>
 						<div class="c-footer__box">

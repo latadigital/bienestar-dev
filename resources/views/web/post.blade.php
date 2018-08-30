@@ -23,7 +23,11 @@
 								<p>Comparte:</p>
 								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ route('post', $post->slug) }}">Facebook</a>
 								<a target="_blank" href="http://twitter.com/share?text=Bienestar Saval&url={{ route('post', $post->slug) }}&hashtags=BienestarSaval">Twitter</a>
-								<div class="c-single__pagination"><a href="#"><span class="fas fa-arrow-left"></span><i>Prev</i></a>/<a href="#"><i>Next </i><span class="fas fa-arrow-right"></span></a></div>
+								<div class="c-single__pagination">
+									<a href="{{ (is_null($prev))?'#':route('post', $prev->slug) }}">
+										<span class="fas fa-arrow-left"></span><i>Prev</i>
+									</a>/
+									<a href="{{ (is_null($next))?'#':route('post', $next->slug) }}"><i>Next </i><span class="fas fa-arrow-right"></span></a></div>
 							</div>
 						</div>
 						<div class="c-single__aside">
@@ -46,11 +50,11 @@
 
 							<h2>Posts recientes</h2>
                             <div class="c-single__recents">
-								@foreach (\App\Post::take(2)->orderByDesc('created_at')->get() as $post)
+								@foreach (\App\Post::take(5)->where('id', '<>', $post->id)->orderByDesc('created_at')->get() as $post)
 								<div class="c-single__recent">
-									<figure style="background: url('{{$post->file}}')"></figure>
+									<figure style="background-image: url('{{ $post->file }}');background-position: center center;background-size: cover;background-repeat:  no-repeat;"></figure>
 									<div class="info">
-										<h3>{{ $post->name }}</h3>
+										<h3><a href="{{ route('post', $post->slug) }}">{{ $post->name }}</a></h3>
 										<p>{{ $post->created_at->format('M d, Y') }}</p>
 									</div>
 								</div>

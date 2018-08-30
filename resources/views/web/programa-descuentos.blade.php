@@ -49,15 +49,15 @@
 					<h1>¿Cómo <strong>acceder al programa?</strong></h1>
 					<div class="c-comoAcceder__items">
 						<div class="c-comoAcceder__item">
-							<div class="icon"><img src="/assets_web/img/planes-icon-1.svg"></div>
+							<div class="icon"><img src="/assets_web/img/planes-icon-1.png"></div>
 							<p>Verifique si el o los medicamentos recetados tienen descuento, para esto, utilice el buscador seleccionando marca y/o presentación.</p>
 						</div>
 						<div class="c-comoAcceder__item">
-							<div class="icon"><img src="/assets_web/img/planes-icon-2.svg"></div>
+							<div class="icon"><img src="/assets_web/img/planes-icon-2.png"></div>
 							<p>Si su medicamento tiene descuento usted puede imprimir, guardar, o enviar a través de SMS (desde móviles) el <strong>cupón de descuento</strong> correspondiente.</p>
 						</div>
 						<div class="c-comoAcceder__item">
-							<div class="icon"><img src="/assets_web/img/planes-icon-3.svg"></div>
+							<div class="icon"><img src="/assets_web/img/planes-icon-3.png"></div>
 							<p>Una vez que tenga en su poder el cupón junto a la receta médica, puede dirigirse a cualquier farmacia adherida al programa, inscribirse y quedar habilitado para obtener el descuento en forma inmediata.</p>
 						</div>
 					</div>
@@ -143,10 +143,8 @@
 					<div class="c-modalCupon__overlay"></div>
 					<div class="c-modalCupon__wrapper">
 						<div class="c-modalCupon__info">
-							<div class="c-modalCupon__text">
-								<!--<span><img src="/assets_web/img/nuevo.png"></span>
-								<h1>Programa de <br><strong>Descuento </strong><br>en medicamentos</h1>-->
-								<img src="/assets_web/img/logo-cupon.png">
+							<div class="c-modalCupon__text"><span><img src="/assets_web/img/nuevo.png"></span>
+								<h1>Programa de <br><strong>Descuento </strong><br>en medicamentos</h1>
 								<p>Descuento válido del @{{ result.from | dateString }} al @{{ result.to | dateString
 									}}, ambas fechas inclusive. Consulte por la disponibilidad de los productos en Farmacias Ahumada, Farmacias Salco Brand, Farmacias Cruz Verde, y en todas las farmacias adheridas a este programa. No acumulables a otras promociones y/o convenios.</p>
 								<p>NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por su médico. Consulte siempre el uso de medicamentos con su médico o químico farmacéutico. Dispensación de medicamentos se realizará conforme condición de venta según normativa vigente.</p>
@@ -177,21 +175,17 @@
 				<div class="c-modalMobile" style="display:none;">
 					<div class="c-modalMobile__overlay"></div>
 					<div class="c-modalMobile__wrapper">
-						<div class="c-modalMobile__firstStep c-modalMobile__firstStep--active">
-							<!--<span><img src="/assets_web/img/nuevo.png"></span>
-							<h1>Programa de <br><strong>Descuento </strong><br>en medicamentos</h1>-->
-							<img src="/assets_web/img/logo-cupon.png">
+						<div class="c-modalMobile__firstStep c-modalMobile__firstStep--active"><span><img src="/assets_web/img/nuevo.png"></span>
+							<h1>Programa de <br><strong>Descuento </strong><br>en medicamentos</h1>
 							<div class="c-modalMobile__text">
 								<p>Descuento válido del @{{ result.from | dateString }} al @{{ result.to | dateString
-									}}, ambas fechas inclusive. Consulte por la disponibilidad de los productos en Farmacias Ahumada, Farmacias Salco Brand, Farmacias Cruz Verde, y en todas las farmacias adheridas a este programa. No acumulables a otras promociones y/o convenios.</p>
-								<p>NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por su médico. Consulte siempre el uso de medicamentos con su médico o químico farmacéutico. Dispensación de medicamentos se realizará conforme condición de venta según normativa vigente.</p>
-
+									}}, ambas fechas inclusive. Consulte por la disponibilidad de los productos en Farmacias Ahumada, Farmacias Salco Brand, Farmacias Cruz Verde,  y en todas las farmacias adheridas a este programa. No acumulables a otras promociones, ofertas y/o convenios. NO SE AUTOMEDIQUE. Todo medicamento debe ser prescrito por su médico. Consulte siempre el uso de medicamentos con su médico o químico.</p>
 							</div>
 							<div class="c-modalMobile__valido">
 								<p>Programa válido del: @{{ result.from | dateDay }} al @{{ result.to | dateDay }}</p>
 							</div>
 							<div class="c-modalMobile__input-agree">
-								<input type="checkbox"><a href="/terminos-de-uso" target="_blank" title="Enlace a términos y condiciones de uso">He leído y aceptado los términos y condiciones</a>
+								<input type="checkbox"><a href="" target="_blank" title="">He leído y aceptado los términos y condiciones</a>
 							</div><a class="c-modalMobile__btn" href="#">Obtener cupón</a>
 						</div>
 						<div class="c-modalMobile__secondStep">
@@ -221,83 +215,4 @@
 					</div>
 				</div>
 			</main>
-@endsection
-
-@section('js')
-	<script src="{{ asset('assets/plugins/moment/min/moment-with-locales.min.js') }}"></script>
-	<script>
-		const discount = new Vue({
-			el: "#discount",
-            data () {
-                return {
-                    make: '',
-                    presents: [],
-                    presentation: null,
-					discounts: null,
-					result: {
-                        code1: null,
-						code2: null,
-						code3: null,
-						to: null,
-						from: null,
-						accept: 0,
-						id: null
-					}
-                }
-            },
-			filters: {
-				dateString: function (value) {
-				    moment.locale('es');
-					return moment(value).format("D [de] MMMM [del] YYYY");
-				},
-				dateDay: function (value) {
-                    moment.locale('es');
-                    return moment(value).format("D/M/YYYY");
-				}
-			},
-			methods: {
-				buscar: function () {
-                    let self = this;
-					$.get('/api/make/' + self.make + '/discount/' + self.presentation, function (data) {
-					    self.discounts = data;
-					    $("#scrollBuscador").focus();
-					});
-				},
-				show: function (discount) {
-				    this.result.code1 = discount.code1;
-				    this.result.code2 = discount.code2;
-				    this.result.code3 = discount.code3;
-				    this.result.to = discount.to_date;
-				    this.result.from = discount.from_date;
-				    this.result.id = discount.id;
-
-                    $(".c-modalCupon").show();
-				}
-			},
-			computed: {
-				Save: function () {
-					return "/download/discount/" + this.result.id
-				},
-				Print: function () {
-                    return "/print/discount/" + this.result.id
-				},
-				Send: function () {
-					return "mailto:?body="+window.location.host +"/generate/discount/?subject=Cupon" + this.result.id
-                },
-			},
-			watch: {
-			    make: function (value) {
-			        let self = this;
-					$.get('/api/make/' +  value +  '/presentation', function (data) {
-					    self.presents = data.map(function (value) {
-					        return {'id': value.id, 'presentation': value.presentation}
-						});
-					    self.presentation = '';
-					    self.discounts = data;
-                        $("#scrollBuscador").focus();
-					})
-				}
-			}
-		});
-	</script>
 @endsection

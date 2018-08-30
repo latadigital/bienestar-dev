@@ -25,7 +25,7 @@
 					<li><a href="/categorias/dolor-e-inflamacion"><span><img src="/assets_web/img/iconos/icon-dolor-white.svg" alt=""></span>Dolor e Inflamación</a></li>
 					<li><a href="/categorias/mental"><span><img src="/assets_web/img/iconos/icon-mental-white.svg" alt=""></span>Mental</a></li>
 					<li><a href="/categorias/vision"><span><img src="/assets_web/img/iconos/icon-vision-white.svg" alt=""></span>Visión</a></li>
-					<li><a href="/categorias/personas-mayores"><span><img src="/assets_web/img/iconos/icon-adulto-white.svg" alt=""></span>Personas Mayores</a></li>
+					<li><a href="/categorias/adulto-mayor"><span><img src="/assets_web/img/iconos/icon-adulto-white.svg" alt=""></span>Personas Mayores</a></li>
 				</ul>
 			</div>
 		</div>
