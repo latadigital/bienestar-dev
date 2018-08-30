@@ -47,6 +47,7 @@ class PdfCouponController extends Controller
 
     public function download($discount)
     {
+        return response()->download(public_path('cupon.pdf'));
         $discount = Discount::findOrFail($discount);
 
         $pdf = new \TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
@@ -68,6 +69,7 @@ class PdfCouponController extends Controller
 
     public function print($discount)
     {
+        return response()->redirectTo(url('cupon.pdf'));
         $discount = Discount::findOrFail($discount);
 
         $pdf = new \TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
