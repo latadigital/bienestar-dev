@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +12,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/posts-category/{id}/{count}', 'Api\PostController@index');
+Route::get('/posts', 'Api\BlogController@index');
+Route::get('/make/{make}/presentation', 'Api\MakePresentationController@index');
+Route::get('/make/{id}/discount/{discount}', 'Api\MakeDiscountController@show');
+Route::post('/subscribes', 'Api\SubscribeController@store');

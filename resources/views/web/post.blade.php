@@ -2,7 +2,7 @@
 
 @section('content')        
     
-           <!-- <main role="main">
+           <main role="main">
 				<div class="c-single">
 					<div class="c-inner">
 						<div class="c-single__content">
@@ -20,57 +20,57 @@
                             
                             <div class="c-single__share">
 								<div class="icon"><span class="fas fa-share-alt"></span></div>
-								<p>Comparte:</p><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Behance</a>
-								<div class="c-single__pagination"><a href="#"><span class="fas fa-arrow-left"></span><i>Prev</i></a>/<a href="#"><i>Next </i><span class="fas fa-arrow-right"></span></a></div>
+								<p>Comparte:</p>
+								<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ route('post', $post->slug) }}">Facebook</a>
+								<a target="_blank" href="http://twitter.com/share?text=Bienestar Saval&url={{ route('post', $post->slug) }}&hashtags=BienestarSaval">Twitter</a>
+								<div class="c-single__pagination">
+									<a href="{{ (is_null($prev))?'#':route('post', $prev->slug) }}">
+										<span class="fas fa-arrow-left"></span><i>Prev</i>
+									</a>/
+									<a href="{{ (is_null($next))?'#':route('post', $next->slug) }}"><i>Next </i><span class="fas fa-arrow-right"></span></a></div>
 							</div>
 						</div>
 						<div class="c-single__aside">
 							<div class="c-single__search">
-								<form action="#">
+								<form action="{{ route('interes') }}">
 									<div class="input search">
-										<input type="text" placeholder="Buscar">
+										<input name="q" type="text" placeholder="Buscar">
 									</div>
 								</form>
 							</div>
 
                             <h2>Categorias</h2>
 							<div class="c-single__cats">	
-								@foreach($post->categories as $category)
+								@foreach (\App\Category::all() as $category)
 								<div class="c-single__cat"><a href="{{ route('category', $category->slug) }}">{{ $category->name }}</a>
-									<div class="count">(15)</div>
+									<div class="count">{{ $category->posts->count() }}</div>
                                 </div>
                                 @endforeach
                             </div>
 
 							<h2>Posts recientes</h2>
                             <div class="c-single__recents">
-
-
+								@foreach (\App\Post::take(5)->where('id', '<>', $post->id)->orderByDesc('created_at')->get() as $post)
 								<div class="c-single__recent">
-									<figure></figure>
+									<figure style="background-image: url('{{ $post->file }}');background-position: center center;background-size: cover;background-repeat:  no-repeat;"></figure>
 									<div class="info">
-										<h3>{{ $post->name }}</h3>
-										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
+										<h3><a href="{{ route('post', $post->slug) }}">{{ $post->name }}</a></h3>
+										<p>{{ $post->created_at->format('M d, Y') }}</p>
 									</div>
 								</div>
-								<div class="c-single__recent">
-									<figure></figure>
-									<div class="info">
-										<h3>Dental patients increased to protection</h3>
-										<p>May 16, 2016 by <a href="#">Parker </a>in<a href="#">lab</a></p>
-									</div>
-								</div>
-
+								@endforeach
 							</div>
-							
+							<div class="c-single__recents">
+								<img src="/assets_web/img/2-S-L.png" alt="" width="90%" style="margin: 40px auto;">
+							</div>
 						</div>
 					</div>
 				</div>
-            </main>-->
+            </main>
 
 
 
-			<main role="main">
+			<!--<main role="main">
 				<div class="c-single">
 					<div class="c-inner">
 						<div class="c-single__content">
@@ -209,6 +209,6 @@
 						</div>
 					</div>
 				</div>
-			</main>
+			</main>-->
 
 @stop
